@@ -39,7 +39,7 @@ const Header: React.FC = () => {
             href="#"
             className="text-2xl font-bold tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            Portfolio
+            SVC
           </a>
 
           {/* Desktop Navigation */}
