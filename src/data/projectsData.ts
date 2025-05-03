@@ -28,7 +28,7 @@ export const projectsData = [
     ],
     technologies: ["CrewAI", "Python", "FastAPI", "AI", "Multi-Agent Systems"],
     githubUrl: "https://github.com/D-Harshith/Procurement-Multi-Agent-System",
-    image: "/images/projects/multiagent.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/multiagent.jpg",
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const projectsData = [
     ],
     technologies: ["RAG", "AI", "LangChain", "OpenAI", "Streamlit"],
     githubUrl: "https://github.com/naveenaddanki84/LH24_oola",
-    image: "/images/projects/documentanalysis.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/documentanalysis.jpg",
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ export const projectsData = [
     ],
     technologies: ["YOLO", "CNN", "Object Detection", "Computer Vision", "Python"],
     githubUrl: "https://github.com/Venkat450/Autonomous-Driving---Car-Detection-Using-YOLO",
-    image: "/images/projects/car-detection.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/car-detection.jpg",
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const projectsData = [
     ],
     technologies: ["Machine Learning", "Python", "TensorFlow", "OpenSMILE", "PRAAT", "Librosa"],
     githubUrl: "https://github.com/naveenaddanki84/parkinsons_detection_using_voice",
-    image: "/images/projects/parkinsons.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/parkinsons.jpg",
   },
   {
     id: 5,
@@ -84,7 +84,7 @@ export const projectsData = [
     ],
     technologies: ["R", "Linear Regression", "GAM", "Time-Series Analysis"],
     githubUrl: "https://github.com/Venkat450/EDA",
-    image: "/images/projects/911calls.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/911calls.jpg",
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ export const projectsData = [
     ],
     technologies: ["Power BI", "DAX", "ETL", "Data Processing", "KPI Analysis"],
     githubUrl: "https://github.com/Venkat450/Power-BI/blob/main/Ecommerce%20Analysis.pbix",
-    image: "/images/projects/ecommerce.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/ecommerce.jpg",
   },
   {
     id: 7,
@@ -112,7 +112,7 @@ export const projectsData = [
     ],
     technologies: ["NLP", "Sentiment Analysis", "Data Engineering", "Node.js", "Hugging Face", "Deepgram"],
     githubUrl: "https://github.com/maheswar09/Spades",
-    image: "/images/projects/meeting-companion.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/meeting-companion.jpg",
   },
   {
     id: 8,
@@ -126,7 +126,7 @@ export const projectsData = [
     ],
     technologies: ["Python", "Streamlit", "Plotly", "diagrams.net"],
     githubUrl: "https://github.com/WannaBeNeuralNetwork/Data_Visualizations_INFO-590",
-    image: "/images/projects/olympics.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/olympics.jpg",
   },
   {
     id: 9,
@@ -140,7 +140,7 @@ export const projectsData = [
     ],
     technologies: ["BERT", "Transformers", "PyTorch", "scikit-learn", "NLP"],
     githubUrl: "https://github.com/Venkat450/Sentiment-Analysis-with-Deep-Learning-using-BERT",
-    image: "/images/projects/bert-sentiment.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/bert-sentiment.jpg",
   },
   {
     id: 10,
@@ -154,7 +154,7 @@ export const projectsData = [
     ],
     technologies: ["ChromaDB", "Sentence Transformers", "Pandas", "Python"],
     githubUrl: "https://github.com/Venkat450/Netflix-Movie-Recommendation-System-Using-ChromaDB",
-    image: "/images/projects/netflix-recommendation.jpg",
+    image: "/Sree-Venkat-Portfolio/images/projects/netflix-recommendation.jpg",
   },
 ];
 
