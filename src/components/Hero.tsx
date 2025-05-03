@@ -120,13 +120,13 @@ const Hero: React.FC = () => {
               Get in Touch
             </a>
             <a
-              href="/Sree_Venkat_Resume_0.pdf"
+              href={`${import.meta.env.BASE_URL}Sree_Venkat_Resume_0.pdf`}
               target="_blank"
               className="px-6 py-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition-colors duration-300"
             >
               Download Resume
             </a>
-          </div>
+
           
           <div className="inline-flex flex-col items-center mt-8 animate-bounce">
             <span className="text-sm mb-2">Explore My Work</span>
