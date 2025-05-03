@@ -126,7 +126,7 @@ const Hero: React.FC = () => {
             >
               Download Resume
             </a>
-
+          </div>
           
           <div className="inline-flex flex-col items-center mt-8 animate-bounce">
             <span className="text-sm mb-2">Explore My Work</span>
