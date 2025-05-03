@@ -1,0 +1,130 @@
+import React, { useState } from 'react';
+import { ExternalLink, Github } from 'lucide-react';
+import { motion } from '../utils/motion';
+import { projectsData } from '../data/projectsData';
+
+const Projects: React.FC = () => {
+  const [activeFilter, setActiveFilter] = useState('all');
+
+  const filteredProjects = activeFilter === 'all' 
+    ? projectsData 
+    : projectsData.filter(project => project.category === activeFilter);
+
+  const categories = ['all', ...new Set(projectsData.map(project => project.category))];
+
+  return (
+    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
+          <p className="text-gray-600 dark:text-gray-400">
+            Explore my portfolio of data-driven projects with measurable impact and results.
+          </p>
+        </div>
+
+        <div className="flex justify-center mb-12 overflow-x-auto pb-2">
+          <div className="flex space-x-2">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveFilter(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+                  activeFilter === category
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
+                }`}
+              >
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProjects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+            >
+              <div 
+                className="h-48 bg-cover bg-center"
+                style={{ backgroundImage: `url(${project.image})` }}
+              ></div>
+
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold">{project.title}</h3>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full">
+                    {project.category}
+                  </span>
+                </div>
+
+                <p className="text-gray-600 dark:text-gray-400 mb-6 line-clamp-3">
+                  {project.description}
+                </p>
+
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  {project.metrics.map((metric, i) => (
+                    <div 
+                      key={i} 
+                      className="bg-gray-50 dark:bg-gray-700 p-3 rounded text-center"
+                    >
+                      <span className="block text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        {metric.value}
+                      </span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">
+                        {metric.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-2">
+                    {project.technologies.map((tech, i) => (
+                      <span 
+                        key={i} 
+                        className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex space-x-2">
+                    {project.githubUrl && (
+                      <a 
+                        href={project.githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                      >
+                        <Github size={18} />
+                      </a>
+                    )}
+                    {project.liveUrl && (
+                      <a 
+                        href={project.liveUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                      >
+                        <ExternalLink size={18} />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
