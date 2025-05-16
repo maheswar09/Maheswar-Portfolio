@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext.tsx';
+import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { theme } = useTheme();
-  
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -32,7 +33,6 @@ const Hero: React.FC = () => {
 
     const createParticles = () => {
       const particleCount = Math.floor(window.innerWidth * window.innerHeight / 10000);
-      
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
@@ -49,30 +49,28 @@ const Hero: React.FC = () => {
 
     const animate = () => {
       requestAnimationFrame(animate);
-      
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
       const primaryColor = theme === 'dark' ? '59, 130, 246' : '37, 99, 235';
-      
+
       particles.forEach((particle, index) => {
         particle.x += particle.speedX;
         particle.y += particle.speedY;
-        
+
         if (particle.x < 0) particle.x = canvas.width;
         if (particle.x > canvas.width) particle.x = 0;
         if (particle.y < 0) particle.y = canvas.height;
         if (particle.y > canvas.height) particle.y = 0;
-        
+
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(${primaryColor}, ${particle.opacity})`;
         ctx.fill();
-        
+
         for (let j = index + 1; j < particles.length; j++) {
           const dx = particles[j].x - particle.x;
           const dy = particles[j].y - particle.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
-          
+
           if (distance < 100) {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
@@ -99,20 +97,38 @@ const Hero: React.FC = () => {
         className="absolute inset-0 w-full h-full"
         style={{ zIndex: 0 }}
       ></canvas>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+          <motion.h1
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <span className="block">Sree Venkat Chintakula</span>
             <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
               AI & Data Scientist | ML Engineer | Data & Analytics Professional
             </span>
-          </h1>
-          <p className="text-lg sm:text-xl mb-8 text-gray-500 dark:text-gray-300">
-            Data Science Master's candidate and Research Assistant at Indiana University, with industry experience in BI Insights and analytics. Focused on AI, machine learning, and deriving actionable insights through advanced analytics to solve real-world problems.
-          </p>
+          </motion.h1>
 
+          <motion.p
+            className="text-lg sm:text-xl mb-8 text-gray-500 dark:text-gray-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
+            Data Science Master's candidate and Research Assistant at Indiana University,
+            with industry experience in BI Insights and analytics. Focused on AI, machine learning,
+            and deriving actionable insights through advanced analytics to solve real-world problems.
+          </motion.p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+          <motion.div
+            className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+          >
             <a
               href="#contact"
               className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors duration-300"
@@ -126,12 +142,16 @@ const Hero: React.FC = () => {
             >
               Download Resume
             </a>
-          </div>
-          
-          <div className="inline-flex flex-col items-center mt-8 animate-bounce">
+          </motion.div>
+
+          <motion.div
+            className="inline-flex flex-col items-center mt-8"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
+          >
             <span className="text-sm mb-2">Explore My Work</span>
             <ArrowDown size={24} />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

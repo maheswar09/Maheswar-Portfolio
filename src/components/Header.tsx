@@ -16,31 +16,39 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#timeline' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
-  ];
+const navLinks = [
+  { name: 'About', href: '#about' },
+  { name: 'Skills', href: '#skills' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#timeline' },
+  { name: 'Achievements', href: '#achievements' },
+  { name: 'Contact', href: '#contact' },
+];
+
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm'
+          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md'
           : 'bg-transparent'
       }`}
+
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <a
-            href="#"
-            className="text-2xl font-bold tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            SVC
+          <a href="#" className="flex items-center space-x-2">
+            <img
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
+              alt="SVC Logo"
+              className="h-8 w-auto"
+            />
+            <span className="text-2xl font-bold tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              SVC
+            </span>
           </a>
+
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -48,7 +56,8 @@ const Header: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="relative text-sm font-medium text-gray-800 dark:text-gray-100 transition duration-300 group"
+
               >
                 {link.name}
               </a>

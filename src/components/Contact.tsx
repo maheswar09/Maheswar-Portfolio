@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from '../utils/motion';
 import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
-
+ import emailjs from '@emailjs/browser';
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -18,26 +18,41 @@ const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
-      
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
-    }, 1500);
-  };
+ 
+
+
+
+// Inside your handleSubmit:
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  emailjs.send(
+    'service_oacdlmw',      // e.g., service_oacdlmw
+    'template_cgs501q',     // e.g., template_mnxyz12
+    {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    },
+    'XfNCrdYXCPQYHWXZm'       // e.g., 9rjK2AbCdEFghijkL
+  )
+  .then(() => {
+    setSubmitted(true);
+    setFormData({ name: '', email: '', subject: '', message: '' });
+  })
+  .catch((err) => {
+    alert("Email failed to send. Please try again.");
+    console.error('EmailJS Error:', err);
+  })
+  .finally(() => {
+    setIsSubmitting(false);
+    setTimeout(() => setSubmitted(false), 5000);
+  });
+};
+
+
 
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-800">

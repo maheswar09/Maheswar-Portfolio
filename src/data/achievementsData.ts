@@ -1,12 +1,14 @@
 export interface Achievement {
-    id: number;
-    title: string;
-    organization: string;
-    type: string; // "Certification", "Competition", "Badge", "Hackathon"
-    date: string;
-    description?: string;
-    credentialUrl?: string;
-  }
+  id: number;
+  title: string;
+  organization: string;
+  type: string; // "Certification", "Competition", "Badge", "Hackathon"
+  date: string;
+  description?: string;
+  credentialUrl?: string;
+  image?: string; // ✅ Add this
+}
+
   
   export const achievementsData: Achievement[] = [
     // Certifications
@@ -99,17 +101,20 @@ export interface Achievement {
     // Leetcode Badges
     {
       id: 12,
-      title: "Premium SQL Badge",
+      title: "SQL 50 Badge",
       organization: "Leetcode",
       type: "Badge",
       date: "Mar 2025",
+      image: "https://assets.leetcode.com/static_assets/others/Top_SQL_50.gif" // ✅ Add this
     },
     {
       id: 13,
-      title: "Top SQL 50 Badge",
+      title: "Advanced SQL 50",
       organization: "Leetcode",
       type: "Badge",
       date: "Active",
+      image: "https://assets.leetcode.com/static_assets/others/Premium_SQL_50.gif" // ✅ Add this
     }
+
   ];
   
