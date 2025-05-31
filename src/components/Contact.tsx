@@ -28,15 +28,18 @@ const handleSubmit = (e: React.FormEvent) => {
   setIsSubmitting(true);
 
   emailjs.send(
-    'service_oacdlmw',      // e.g., service_oacdlmw
-    'template_cgs501q',     // e.g., template_mnxyz12
+    import.meta.env.VITE_SERVICE_ID,
+    
+    import.meta.env.VITE_TEMPLATE_ID, 
+        
     {
       from_name: formData.name,
       from_email: formData.email,
       subject: formData.subject,
       message: formData.message,
     },
-    'XfNCrdYXCPQYHWXZm'       // e.g., 9rjK2AbCdEFghijkL
+    import.meta.env.VITE_PUBLIC_KEY   
+      
   )
   .then(() => {
     setSubmitted(true);
@@ -80,8 +83,8 @@ const handleSubmit = (e: React.FormEvent) => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400">Email</h4>
-                  <a href="mailto:sreevenkat450@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                    sreevenkat450@gmail.com
+                  <a href="mailto:gorantlamaheswar@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    gorantlamaheswar@gmail.com
                   </a>
                 </div>
               </div>
@@ -92,8 +95,8 @@ const handleSubmit = (e: React.FormEvent) => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400">Phone</h4>
-                  <a href="tel:+19303332608" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                    +1 (930) 333-2608
+                  <a href="tel:+19303332778" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    +1 (930) 333-2778
                   </a>
                 </div>
               </div>
@@ -113,7 +116,7 @@ const handleSubmit = (e: React.FormEvent) => {
               <h3 className="text-xl font-bold mb-6">Professional Profiles</h3>
               <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com/in/sree-venkat-chintakula-658078211/" 
+                href="https://www.linkedin.com/in/maheswar-gorantla-a80b60209/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
@@ -121,7 +124,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 <Linkedin className="w-5 h-5 text-gray-700 dark:text-gray-300" />
               </a>
               <a 
-                href="https://github.com/Venkat450" 
+                href="https://github.com/maheswar09" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
@@ -137,17 +140,22 @@ const handleSubmit = (e: React.FormEvent) => {
               <div className="flex flex-col space-y-2">
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
                   <span className="text-gray-600 dark:text-gray-400">Education</span>
-                  <span className="font-medium">MS in Data Science (2025)</span>
+                  <span className="font-medium">MS in Computer Science (2025)</span>
                 </div>
                 
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Preferred Roles</span>
-                  <span className="font-medium">Data Scientist, Research Scientist</span>
+                  <span className="text-gray-600 dark:text-gray-400 whitespace-nowrap">
+                    Preferred Roles
+                  </span>
+                  <span className="font-medium text-right max-w-[70%]">
+                    Software Developer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer
+                  </span>
                 </div>
+
                 
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
                   <span className="text-gray-600 dark:text-gray-400">Available From</span>
-                  <span className="font-medium">May 2025</span>
+                  <span className="font-medium">June 2025</span>
                 </div>
               </div>
             </div>

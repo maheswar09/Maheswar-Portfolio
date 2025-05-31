@@ -91,7 +91,11 @@ const Hero: React.FC = () => {
   }, [theme]);
 
   return (
-    <section id="about" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+  id="about"
+  className="relative min-h-screen pt-24 scroll-mt-16 flex items-center justify-center overflow-hidden"
+>
+
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"
@@ -99,16 +103,16 @@ const Hero: React.FC = () => {
       ></canvas>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-4xl mx-auto">
           <motion.h1
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="block">Sree Venkat Chintakula</span>
+            <span className="block">Maheswar Gorantla</span>
             <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
-              AI & Data Scientist | ML Engineer | Data & Analytics Professional
+              Software Engineer | Full-Stack Developer
             </span>
           </motion.h1>
 
@@ -118,9 +122,10 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Data Science Master's candidate and Research Assistant at Indiana University,
-            with industry experience in BI Insights and analytics. Focused on AI, machine learning,
-            and deriving actionable insights through advanced analytics to solve real-world problems.
+            Graduate student in Computer Science at Indiana University with industry experience 
+            in full-stack development, CMS platforms, and scalable systems. Skilled in building 
+            secure, accessible applications using React, Angular, Node.js, and AWS, with a focus 
+            on user-centric design and efficient development through CI/CD and agile methodologies.
           </motion.p>
 
           <motion.div
@@ -136,7 +141,7 @@ const Hero: React.FC = () => {
               Get in Touch
             </a>
             <a
-              href="/Sree-Venkat-Portfolio/Sree_Venkat_Resume_0.pdf"
+              href="https://drive.google.com/file/d/1JkcGaK07MCuzfodeYMkGGvIimHJcQgrc/view?usp=sharing"
               target="_blank"
               className="px-6 py-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition-colors duration-300"
             >
@@ -149,8 +154,11 @@ const Hero: React.FC = () => {
             animate={{ y: [0, -10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
           >
+            <a href='#skills'>
             <span className="text-sm mb-2">Explore My Work</span>
-            <ArrowDown size={24} />
+            </a>
+            <ArrowDown size={24}/>
+            
           </motion.div>
         </div>
       </div>

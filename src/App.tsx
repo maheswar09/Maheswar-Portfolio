@@ -8,6 +8,7 @@ import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
+import Publications from './components/Publications';
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
         <main>
           <Hero />
           <Skills />
-          <Projects />
-          <Achievements />
           <Timeline />
+          <Projects />
+          <Publications />
           <Contact />
         </main>
         <Footer />

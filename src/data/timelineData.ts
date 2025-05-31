@@ -6,72 +6,69 @@ export interface TimelineItem {
   location: string;
   duration: string;
   current: boolean;
-  description: string;
-  achievements: string[];
+  description: string[];
+  // achievements: string[];
   technologies: string[];
 }
 
 export const timelineData: TimelineItem[] = [
   {
     id: 1,
-    year: '2025',
-    title: 'Graduate Research Assistant',
-    company: 'Indiana University Bloomington, School of Medicine',
-    location: 'Bloomington, IN',
-    duration: 'Jan 2025 – Present',
-    current: true,
-    description: 'Constructed multimodal pipelines integrating GWAS with neuroimaging and clinical data for Alzheimer’s research.',
-    achievements: [
-      'Built ML models using ResNet-50 and transformers for genomic and MRI data.',
-      'Handled 100+ GB imaging data using SPM12, FSL, and Nilearn for connectivity analysis.',
-      'Visualized GWAS results with R to improve interpretability.',
+    year: '2023',
+    title: 'Software Developer Intern',
+    company: 'SrasysInc',
+    location: 'Bangalore, India',
+    duration: 'Jan 2023 – Jul 2023',
+    current: false,
+    description: [
+      'Developed the ME Registration Application, a cloud-based school management system using Angular, Node.js, and Firebase, streamlining enrolment, registration, and payment processes for Greystone House School, serving 300+ students and staff.',
+      'Integrated a secure payment module with real-time tracking and reporting capabilities for infant, toddler, and primary programs, processing over 200 transactions monthly with 100% accuracy and enabling automated due reminders for parents.',
+      'Architected a scalable Firebase database schema to support an initial 500 records with a projected 20% annual growth and implemented role-based access controls using Firebase Authentication for admin and management staff, ensuring secure, efficient data management and scalability for future parent-level access.',
     ],
-    technologies: ['Python', 'TensorFlow', 'SPM12', 'R', 'PLINK', 'Nilearn']
+    technologies: ['Angular', 'Tailwind CSS', 'Node.js', 'Firebase', 'API']
   },
   {
     id: 2,
-    year: '2023',
-    title: 'Master of Science - Data Science',
-    company: 'Indiana University Bloomington',
-    location: 'Bloomington, IN',
-    duration: 'Aug 2023 – May 2025',
-    current: true,
-    description: 'Pursuing MS in Data Science focused on ML, NLP, Data Mining, Visualization, Cloud, and Statistical Analysis.',
-    achievements: [
-      'Completed coursework in Applying ML Techniques in NLP, Predictive Analysis and Data Mining, and Advanced Database Concepts.'
+    year: '2024',
+    title: 'Software Developer Intern',
+    company: 'SrasysInc',
+    location: 'Ellicot City, MD, USA',
+    duration: 'Jan 2024 – May 2025',
+    current: false,
+    description: [
+      'Developed Srasys Academy, a full-stack e-learning platform using React, Tailwind CSS, Node.js, Express.js, and PostgreSQL, achieving a 40% faster page load time and enabling a seamless experience for 500+ registered users.',
+      'Integrated PayPal payment gateway, enabling secure and real-time course transactions; supported over 100 successful payments within the first month of launch with zero reported transaction failures.',
+      'Built responsive and WCAG 2.1 AA-compliant front-end components with advanced course filtering and search functionalities, increasing user engagement time by 30% and improving course discovery rates.'
     ],
-    technologies: ['Python', 'SQL', 'R', 'Power BI', 'AWS']
+    technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'PayPal Gateway']
   },
   {
     id: 3,
-    year: '2021',
-    title: 'Programmer Analyst - BI Insights',
-    company: 'Cognizant Technology Solutions',
-    location: 'Hyderabad, India',
-    duration: 'Apr 2021 – Jul 2022',
+    year: '2024',
+    title: 'CMS Developer Intern',
+    company: 'University Information Technology Services (UITS), Indiana University (IU)',
+    location: 'Bloomington, IN, USA',
+    duration: 'May 2024 – Jul 2024',
     current: false,
-    description: 'Designed and optimized ETL data pipelines and data models supporting ad-hoc reporting and advanced analytics.',
-    achievements: [
-      'Automated data validation reducing manual efforts.',
-      'Built interactive dashboards using OAC and OBIEE.',
-      'Enhanced PL/SQL procedures for optimized queries.'
+    description: [
+      'Built an IU-branded WordPress block theme using HTML, CSS, JavaScript, PHP, IU’s Rivet Design System (Rivet 2), and WordPress, enhancing navigation features and improving user experience through responsive design and consistent UI across the platform.',
+      'Ensured 100% compliance with WCAG 2.1 AA accessibility standards using Siteimprove and utilized MySQL to efficiently store and retrieve post-related data, optimizing content management workflows and ensuring seamless data handling for the EduBlog platform.',
+      'Documented development processes, code structure, and user guidelines, streamlining onboarding for future developers and enabling efficient implementation of updates and enhancements.'
     ],
-    technologies: ['SQL', 'Oracle ODI', 'OAC', 'OBIEE', 'PL/SQL']
+    technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', ' IU’s Rivet Design System (Rivet 2)', 'WordPress', 'Siteimprove', 'MySQL']
   },
   {
     id: 4,
-    year: '2020',
-    title: 'Data Science Intern',
-    company: 'Inmovidu (in partnership with IIT Bombay)',
-    location: 'India',
-    duration: 'Sep 2020 – Feb 2021',
+    year: '2025',
+    title: 'Teaching Assistant - Software Engineering I',
+    company: 'Indiana University Bloomington',
+    location: 'Bloomington, IN, USA',
+    duration: 'Aug 2024 – May 2025',
     current: false,
-    description: 'Built deep learning pipeline using ResNet-50 and YOLOv5 for COVID face mask detection and facial recognition.',
-    achievements: [
-      'Deployed API using FastAPI and designed real-time monitoring dashboard.',
-      'Integrated AWS for live insights and performance tracking.',
-      'Achieved 92% accuracy with pre-trained models.'
+    description: [
+      'Mentored six student teams on enhancing the Angband game, guiding them through milestones such as configuration management, CI/CD, and containerization; facilitated 20+ client calls using agile methodologies, and provided feedback on code quality and debugging to improve project outcomes.',
+      'Collaborated with faculty to design course content on software engineering principles, covering Git, testing, security, and distributed deployment, enhancing students’ practical understanding and encouraging hands-on involvement in real-world system development'
     ],
-    technologies: ['Python', 'YOLOv5', 'ResNet-50', 'FastAPI', 'Power BI', 'AWS']
+    technologies: ['Communication & Collaboration', 'Team Management', 'Leadership', 'Time Management', 'Debugging Support', 'Agile Methodologies']
   }
 ];

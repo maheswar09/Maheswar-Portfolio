@@ -19,9 +19,9 @@ const Header: React.FC = () => {
 const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#timeline' },
-  { name: 'Achievements', href: '#achievements' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Publications', href: '#publications' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -44,7 +44,7 @@ const navLinks = [
               className="h-8 w-auto"
             />
             <span className="text-2xl font-bold tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              SVC
+              MG
             </span>
           </a>
 

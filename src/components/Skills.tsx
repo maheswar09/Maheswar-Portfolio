@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from '../utils/motion';
 import { skillsData } from '../data/skillsData';
 
 const Skills: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  // const [activeCategory, setActiveCategory] = useState('all');
   
-  const filteredSkills = activeCategory === 'all' 
-    ? skillsData
-    : skillsData.filter(skill => skill.category === activeCategory);
+  // const filteredSkills = activeCategory === 'all' 
+  //   ? skillsData
+  //   : skillsData.filter(skill => skill.category === activeCategory);
   
-  const categories = ['all', ...new Set(skillsData.map(skill => skill.category))];
+  // const categories = ['all', ...new Set(skillsData.map(skill => skill.category))];
 
   return (
     <section id="skills" className="py-20 bg-white dark:bg-gray-800">
@@ -21,7 +21,7 @@ const Skills: React.FC = () => {
           </p>
         </div>
         
-        <div className="flex justify-center mb-8 overflow-x-auto pb-2">
+        {/* <div className="flex justify-center mb-8 overflow-x-auto pb-2">
           <div className="flex space-x-2">
             {categories.map((category) => (
               <button
@@ -37,10 +37,10 @@ const Skills: React.FC = () => {
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredSkills.map((skill) => (
+          {skillsData.map((skill) => (
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, y: 20 }}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import {  Github,CheckCircle } from 'lucide-react';
 import { motion } from '../utils/motion';
 import { projectsData } from '../data/projectsData';
 
@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
   const categories = ['all', ...new Set(projectsData.map(project => project.category))];
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="md:py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
@@ -22,8 +22,8 @@ const Projects: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex justify-center mb-12 overflow-x-auto pb-2">
-          <div className="flex space-x-2">
+        <div className="mb-12 overflow-x-auto pb-2">
+          <div className="flex space-x-2 w-max px-4">
             {categories.map((category) => (
               <button
                 key={category}
@@ -50,24 +50,35 @@ const Projects: React.FC = () => {
               viewport={{ once: true }}
               className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
+              <a href={project.githubUrl} target="_blank"  rel="noopener noreferrer" >
               <div 
                 className="h-48 bg-cover bg-center"
                 style={{ backgroundImage: `url(${project.image})` }}
               ></div>
 
               <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
+                <div className="flex flex-row justify-between items-center mb-4">
                   <h3 className="text-xl font-bold">{project.title}</h3>
-                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full">
-                    {project.category}
-                  </span>
+                  <div className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full">
+                  {/* <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full"> */}
+                    <p className='text-center'>{project.category}</p>
+                  {/* </span> */}
+                  </div>
                 </div>
 
-                <p className="text-gray-600 dark:text-gray-400 mb-6 line-clamp-3">
-                  {project.description}
-                </p>
+                <ul className="text-gray-600 dark:text-gray-400 mb-6 space-y-2">
+                  {project.description.map((point, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <div>
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1" />
+                      </div>
+                      <span className="line-clamp-7">{point}</span>
+                    </li>
+                  ))}
+                </ul>
 
-                <div className="grid grid-cols-2 gap-4 mb-6">
+
+                {/* <div className="grid grid-cols-2 gap-4 mb-6">
                   {project.metrics.map((metric, i) => (
                     <div 
                       key={i} 
@@ -81,19 +92,20 @@ const Projects: React.FC = () => {
                       </span>
                     </div>
                   ))}
-                </div>
+                </div> */}
 
                 <div className="flex justify-between items-center">
-                  <div className="flex space-x-2">
+                  <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
                       <span 
                         key={i} 
-                        className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded"
+                        className="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
+
 
                   <div className="flex space-x-2">
                     {project.githubUrl && (
@@ -106,19 +118,10 @@ const Projects: React.FC = () => {
                         <Github size={18} />
                       </a>
                     )}
-                    {project.liveUrl && (
-                      <a 
-                        href={project.liveUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-                      >
-                        <ExternalLink size={18} />
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>
+              </a>
             </motion.div>
           ))}
         </div>

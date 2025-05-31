@@ -6,7 +6,7 @@ export interface ProjectMetric {
 export interface Project {
   id: number;
   title: string;
-  description: string;
+  description: string[];
   image: string;
   category: string;
   technologies: string[];
@@ -18,143 +18,172 @@ export interface Project {
 export const projectsData = [
   {
     id: 1,
-    title: "Starbucks Procurement Multi-Agent System",
-    category: "Artificial Intelligence (AI) & Machine Learning",
+    title: "Rental Voyage",
+    category: "Web Development",
     description:
-      "Built an autonomous multi-agent system using CrewAI and FastAPI to automate procurement workflows. Implemented real-time inter-agent communication and built a dashboard for supplier sourcing and order processing.",
-    metrics: [
-      { label: "Autonomous Agents", value: "Real-time" },
-      { label: "Workflow Automation", value: "Enabled" },
-    ],
-    technologies: ["CrewAI", "Python", "FastAPI", "AI", "Multi-Agent Systems"],
-    githubUrl: "https://github.com/D-Harshith/Procurement-Multi-Agent-System",
-    image: "/Sree-Venkat-Portfolio/images/projects/multiagent.jpg",
+      ["Developed a full stack Rental & Services Management System using the MERN stack (MongoDB, Express.js, React, Node.js), implementing features such as user authentication, property search, and real-time messaging to enhance user experience.",
+        "Designed responsive and WCAG-compliant frontend interfaces in React.js for renter, owner, and admin views and built backend services with Express.js and Node.js, integrating RESTful APIs and MongoDB for efficient storage and retrieval of user profiles, property listings, and reservations, supporting a scalable microservices architecture.",
+        "Collaborated with a team of three using Agile methodologies and Git for version control, delivering features like payment integration (Stripe), maintenance ticket system, and admin dashboard for streamlined property management."],
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "RESTful APIs", "Stripe"],
+    githubUrl: "https://github.iu.edu/Fraustom/CSCI-P465-565-Team-28",
+    image: "images/projects/rental.jpg",
   },
   {
     id: 2,
-    title: "Multimodal Document Analysis Platform",
-    category: "Natural Language Processing (NLP)",
+    title: "AI-Powered Meeting Assistant",
+    category: "Web Development",
     description:
-      "Architected a RAG-based system using LangChain, OpenAI, and Streamlit to process documents with semantic search and context-aware Q&A capabilities.",
-    metrics: [
-      { label: "Document Formats", value: "10+" },
-      { label: "Searchability", value: "Context-aware" },
-    ],
-    technologies: ["RAG", "AI", "LangChain", "OpenAI", "Streamlit"],
-    githubUrl: "https://github.com/naveenaddanki84/LH24_oola",
-    image: "/Sree-Venkat-Portfolio/images/projects/documentanalysis.jpg",
+      ["Developed a full-stack AI-powered meeting companion that captures, transcribes, summarizes, and analyzes both live and recorded meetings to enhance team productivity with actionable insights.",
+        "Built a Chrome extension to capture meeting audio and stream it to a Node.js + Express backend via WebSockets; implemented real time transcription with speaker diarization using the Deepgram API and used Facebook BART Model for summarization and emotion detection, with results displayed on a responsive React dashboard showing live transcripts, summaries, sentiment, and action items."
+      ],
+    technologies: ["React", "Node.js,", "Express", "Deepgram", "Facebook Bart"],
+    githubUrl: "https://github.com/maheswar09/Spades/tree/main",
+    image: "images/projects/ai-1.png",
   },
   {
     id: 3,
-    title: "Autonomous Driving - Car Detection",
-    category: "Computer Vision",
+    title: "EcoLens",
+    category: "App Development",
     description:
-      "Developed YOLO-based CNN models to detect road objects in real-time with improved accuracy and reduced false positives.",
-    metrics: [
-      { label: "Objects Detected", value: "15+" },
-      { label: "Training Reduction", value: "30%" },
-    ],
-    technologies: ["YOLO", "CNN", "Object Detection", "Computer Vision", "Python"],
-    githubUrl: "https://github.com/Venkat450/Autonomous-Driving---Car-Detection-Using-YOLO",
-    image: "/Sree-Venkat-Portfolio/images/projects/car-detection.jpg",
+      ["Developed a React Native mobile app with barcode scanning to access sustainability data like environmental impact and ethical sourcing via the Open Food Facts API, enabling users to build eco-friendly wishlists, contribute reviews, and shop based on eco-scores",
+        "Designed responsive UI with React Native and integrated Firebase for user authentication, reviews, and personalized shopping lists, enhancing user interaction and data management for sustainable shopping."
+      ],
+    technologies: ["React Native", "API", "Firebase"],
+    githubUrl: "https://github.com/maheswar09/EcoLens",
+    image: "images/projects/food.png",
   },
   {
     id: 4,
-    title: "Parkinson’s Disease Early Detection System",
-    category: "Artificial Intelligence (AI) & Machine Learning",
+    title: "Historical Media Object Detection ",
+    category: "Computer Vision",
     description:
-      "Developed a voice analysis system using TensorFlow, Keras, and OpenSMILE achieving 98% accuracy and reducing feature dimensionality by 85%.",
-    metrics: [
-      { label: "Accuracy", value: "98%" },
-      { label: "Feature Reduction", value: "85%" },
-    ],
-    technologies: ["Machine Learning", "Python", "TensorFlow", "OpenSMILE", "PRAAT", "Librosa"],
-    githubUrl: "https://github.com/naveenaddanki84/parkinsons_detection_using_voice",
-    image: "/Sree-Venkat-Portfolio/images/projects/parkinsons.jpg",
+      ["Collaborated on the developing an advanced object detection framework using triple Faster R-CNN models, improving the accuracy of historical media analysis in the IULMIA archive by 40%",
+        "Improved the identification and cataloging of objects in vintage television advertisements, increasing research accessibility by 35% and supporting cultural heritage preservation efforts."
+      ],
+    technologies: ["Machine Learning", "Python", "TensorFlow", "Faster R-CNN "],
+    githubUrl: "https://github.com/maheswar09/HistDetect",
+    image: "images/projects/histdetect.jpg",
   },
   {
     id: 5,
-    title: "Exploratory Analysis of 911 Emergency Calls",
-    category: "Business Intelligence & Analytics",
+    title: "Courier Company Computerization ",
+    category: "Web Development",
     description:
-      "Performed time-series and regression analysis on 100K+ emergency calls using Linear Regression and GAM models, achieving 90% forecast accuracy.",
-    metrics: [
-      { label: "Forecast Accuracy", value: "90%" },
-      { label: "Efficiency Improvement", value: "15%" },
-    ],
-    technologies: ["R", "Linear Regression", "GAM", "Time-Series Analysis"],
-    githubUrl: "https://github.com/Venkat450/EDA",
-    image: "/Sree-Venkat-Portfolio/images/projects/911calls.jpg",
+      ["Spearheaded the development of a software application to optimize the courier company operations by automating record-keeping and report generation for improved operational efficiency and reducing manual processing time by 50%.",
+        "Developed the frontend using HTML, CSS, and Bootstrap, and the backend with PHP, enhancing system performance and reducing page load time by 40%."
+      ],
+    technologies: ["HTML", "CSS", "BOOTSTRAP", "Angular", "PHP"],
+    githubUrl: "https://github.com/maheswar09/CourierWebsite",
+    image: "images/projects/courier.jpg",
   },
   {
     id: 6,
-    title: "E-commerce Sales and Profit Optimization",
-    category: "Business Intelligence & Analytics",
+    title: "Linear Ploynomial Regression",
+    category: "Machine Learning",
     description:
-      "Analyzed e-commerce transactions in Power BI with ETL pipelines for processing and KPI analysis. Delivered 15% revenue growth and 10% cost reduction.",
-    metrics: [
-      { label: "Revenue Growth", value: "15%" },
-      { label: "Cost Reduction", value: "10%" },
-    ],
-    technologies: ["Power BI", "DAX", "ETL", "Data Processing", "KPI Analysis"],
-    githubUrl: "https://github.com/Venkat450/Power-BI/blob/main/Ecommerce%20Analysis.pbix",
-    image: "/Sree-Venkat-Portfolio/images/projects/ecommerce.jpg",
+      ["Developed predictive models using linear regression, polynomial regression, and regularization techniques (Ridge, Lasso, Elastic Net) to estimate the 'Life Ladder' (happiness score) based on economic, social, and emotional indicators from a global happiness dataset.",
+        "Conducted detailed data preprocessing, visualization, and correlation analysis to identify key factors influencing happiness, and evaluated model performance using training/test splits, loss curves, and error metrics to optimize predictive accuracy."
+      ],
+    technologies: ["Machine Learning & Modeling", "numpy", "matplotlib", "scikit-learn",],
+    githubUrl: "https://github.com/maheswar09/linear-polynomial_regression1",
+    image: "images/projects/life.png",
   },
   {
     id: 7,
-    title: "AI-Powered Meeting Companion",
-    category: "Natural Language Processing (NLP)",
+    title: "ML-Powered Rock Classification",
+    category: "Machine Learning",
     description:
-      "Built a real-time meeting summarization pipeline using Hugging Face, Deepgram and Node.js to handle audio ingestion, transcription, and sentiment analysis.",
-    metrics: [
-      { label: "Summarization", value: "Real-time" },
-      { label: "Transcripts Processed", value: "Actionable" },
-    ],
-    technologies: ["NLP", "Sentiment Analysis", "Data Engineering", "Node.js", "Hugging Face", "Deepgram"],
+      ["Built classification models to predict rock categories (Igneous, Metamorphic, Sedimentary) using 19 geological features, applying Multinomial Logistic Regression, SVM, Random Forest, and an Ensemble Classifier for enhanced accuracy.",
+        "Conducted in-depth attribute analysis, data visualization, feature correlation, and hyperparameter tuning to optimize model performance, achieving high classification accuracy and interpretability through feature importance and ensemble methods."
+      ],
+    technologies: ["SVM", " pandas", "numpy", "matplotlib", "scikit-learn", "Random Forest Classifier"],
     githubUrl: "https://github.com/maheswar09/Spades",
-    image: "/Sree-Venkat-Portfolio/images/projects/meeting-companion.jpg",
+    image: "images/projects/rock.png",
   },
   {
     id: 8,
-    title: "Olympic Games Analysis Dashboard",
-    category: "Data Engineering & Visualization",
+    title: "Fine-Tuning Pretrained Language Models for Text Classification",
+    category: "Machine Learning",
     description:
-      "Built an interactive Streamlit dashboard analyzing 120 years of Olympic Games data with ETL pipelines and 30+ visualizations.",
-    metrics: [
-      { label: "Years of Data", value: "120+" },
-      { label: "Visualizations", value: "30+" },
-    ],
-    technologies: ["Python", "Streamlit", "Plotly", "diagrams.net"],
-    githubUrl: "https://github.com/WannaBeNeuralNetwork/Data_Visualizations_INFO-590",
-    image: "/Sree-Venkat-Portfolio/images/projects/olympics.jpg",
+      ["Created a balanced text classification dataset and fine-tuned a pretrained language model (e.g., GPT) using Hugging Face Transformers to classify texts into distinct categories.",
+        "Achieved test accuracy reporting through model evaluation and explored performance improvements via data augmentation, hyperparameter tuning, and experimenting with alternative model architectures."
+      ],
+    technologies: ["Python", "Hugging Face", "Tokenizers"],
+    githubUrl: "https://github.com/maheswar09/Text-Classification-Dataset-and-Fine-Tuning-with-Pretrained-Language-Model",
+    image: "images/projects/hug.png",
   },
   {
     id: 9,
-    title: "Sentiment Analysis with Deep Learning using BERT",
-    category: "Natural Language Processing (NLP)",
+    title: "Footwear Image Classification Using Transfer Learning",
+    category: "Machine Learning",
     description:
-      "Fine-tuned BERT on SMILE Twitter dataset to classify multi-class sentiment using tokenization, AdamW optimizer and F1-score evaluation.",
-    metrics: [
-      { label: "F1 Score", value: "High" },
-      { label: "Dataset", value: "SMILE Twitter" },
-    ],
-    technologies: ["BERT", "Transformers", "PyTorch", "scikit-learn", "NLP"],
+      ["Built a multi-class image classifier (shoe vs sandal vs boot) using a Kaggle dataset and fine-tuned a pretrained convolutional neural network (CNN) to accurately classify footwear images.",
+        "Implemented the full pipeline—data preprocessing, augmentation, model training (both transfer learning and from-scratch CNN), and evaluation—highlighting performance trade-offs between pretrained models and custom architectures."
+      ],
+    technologies: ["Python", "TensorFlow", "OpenCV", "matplotlib", "CNN"],
     githubUrl: "https://github.com/Venkat450/Sentiment-Analysis-with-Deep-Learning-using-BERT",
-    image: "/Sree-Venkat-Portfolio/images/projects/bert-sentiment.jpg",
+    image: "images/projects/foot.jpg",
   },
   {
     id: 10,
-    title: "Netflix Movie Recommendation System using ChromaDB",
-    category: "Recommendation Systems",
+    title: "Automated OMR Sheet Answer Injection and Detection System",
+    category: "Computer Vision",
     description:
-      "Built semantic search based movie recommendation system using Sentence Transformers and ChromaDB to enable personalized recommendations.",
-    metrics: [
-      { label: "Titles Processed", value: "1000" },
-      { label: "Recommendation Type", value: "Semantic Search" },
-    ],
-    technologies: ["ChromaDB", "Sentence Transformers", "Pandas", "Python"],
-    githubUrl: "https://github.com/Venkat450/Netflix-Movie-Recommendation-System-Using-ChromaDB",
-    image: "/Sree-Venkat-Portfolio/images/projects/netflix-recommendation.jpg",
+      ["Built a high-accuracy image processing pipeline (grayscale, edge detection, corner detection) to extract marked answers from OMR sheets, including handwritten options.",
+        "Developed two discreet methods—pixel intensity tweaking and prime number encoding—for embedding correct answers, enabling 100% accurate post-scan extraction.",
+        "Created extraction logic for both methods; initiated image alignment correction for robustness to scanning inconsistencies."
+      ],
+    technologies: ["Python", "OpenCV", "Image Processing", "Edge Detection"],
+    githubUrl: "https://github.com/maheswar09/OMR-ANSWER-DETECTION",
+    image: "images/projects/omr.png",
+  },
+  {
+    id: 11,
+    title: "Heart Disease Prediction Using Machine Learning",
+    category: "Machine Learning",
+    description:
+      ["Orchestrated a robust heart disease risk assessment project, implementing a suite of Machine Learning algorithms including Decision Tree, Logistic Regression, KNN, and SVM.",
+        "Delivered exceptional results with 95% accuracy using Random Forest, showcasing adept analysis and optimization skills across diverse algorithms to maximize predictive precision."
+      ],
+    technologies: ["Python", "Scikit-learn", "Keras", "Decision Trees", "SVM"],
+    githubUrl: "https://github.com/maheswar09/Heart-Disease-Prediction",
+    image: "images/projects/heart.jpg",
+  },
+  {
+    id: 12,
+    title: "Face Emotion Recognition System",
+    category: "Machine Learning",
+    description:
+      ["Applied advanced techniques on a Kaggle dataset to build a customized deep learning model for facial emotion recognition, demonstrating expertise in neural networks and staying at the forefront of data science innovations.",
+        "Rigorously assessed the model's performance using a confusion matrix, attaining an impressive 83% accuracy rate in emotion classification, validating the model's effectiveness in capturing nuanced emotional nuances"
+      ],
+    technologies: ["Python", "Neural Networks"],
+    githubUrl: "https://github.com/maheswar09/Face-Emotion-Recognition",
+    image: "images/projects/face.jpg",
+  },
+  {
+    id: 13,
+    title: "Race Track",
+    category: "Virtual Reality",
+    description:
+      [
+        "Developed an immersive VR race track experience in Unity3D, combining realistic physics and interactive gameplay."
+      ],
+    technologies: ["C#", "Unity 3D"],
+    githubUrl: "https://github.com/maheswar09/Race-Track",
+    image: "images/projects/race.png",
+  },
+  {
+    id: 14,
+    title: "Solar System",
+    category: "Virtual Reality",
+    description:
+      [
+        "Designed an interactive Solar System simulation in Unity3D VR, enabling immersive exploration of planets and celestial mechanics."
+      ],
+    technologies: ["C#", "Unity 3D"],
+    githubUrl: "https://github.com/maheswar09/Solar-Systems",
+    image: "images/projects/solar.png",
   },
 ];
 
