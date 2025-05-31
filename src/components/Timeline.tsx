@@ -71,25 +71,25 @@ const Timeline: React.FC = () => {
                 {/* Expanded details */}
                 {expandedId === item.id && (
                   <div className="mt-4">
-                    <h4 className="text-sm font-semibold mb-2">Key Achievements:</h4>
+                    <h4 className="text-xl font-semibold mb-2">Key Achievements:</h4>
                     <ul className="space-y-2">
                       {item.description.map((achievement, i) => (
                         <li key={i} className="flex items-start gap-2">
                           <div>
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1" />
                           </div>
-                          <span className="text-sm text-gray-600 dark:text-gray-300">{achievement}</span>
+                          <span className="text-lg text-gray-600 dark:text-gray-300">{achievement}</span>
                         </li>
                       ))}
                     </ul>
 
                     <div className="mt-4">
-                      <h4 className="text-sm font-semibold mb-2">Technologies:</h4>
+                      <h4 className="text-xl font-semibold mb-2">Technologies:</h4>
                       <div className="flex flex-wrap gap-2">
                         {item.technologies.map((tech, i) => (
                           <span
                             key={i}
-                            className="px-2 py-1 bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200 text-xs rounded"
+                            className="px-2 py-1 bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200 text-lg rounded"
                           >
                             {tech}
                           </span>
