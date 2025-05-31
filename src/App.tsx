@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
 import Publications from './components/Publications';
+import Education from './components/Education';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Hero />
           <Skills />
           <Timeline />
+          <Education/>
           <Projects />
           <Publications />
           <Contact />
