@@ -101,6 +101,7 @@ export const skillsData = [
       "Docker",
       "Unity",
       "Eclipse IDE",
+      "Tableau",
       "Microsoft Excel",
       "WordPress",
       "Visual Studio Code"

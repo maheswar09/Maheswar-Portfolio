@@ -78,7 +78,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    title: "Linear Ploynomial Regression",
+    title: "Linear Polynomial Regression",
     category: "Machine Learning",
     description:
       ["Developed predictive models using linear regression, polynomial regression, and regularization techniques (Ridge, Lasso, Elastic Net) to estimate the 'Life Ladder' (happiness score) based on economic, social, and emotional indicators from a global happiness dataset.",

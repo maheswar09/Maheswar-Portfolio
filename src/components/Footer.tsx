@@ -36,7 +36,6 @@ const Footer: React.FC = () => {
               <li>Web Development</li>
               <li>App Development</li>
               <li>Automation Testing</li>
-              <li>Data Analysis</li>
               <li>Python Programming</li>
               <li>Research & Development</li>
             </ul>
