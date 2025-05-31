@@ -136,14 +136,14 @@ const Hero: React.FC = () => {
           >
             <a
               href="#contact"
-              className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors duration-300"
+              className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-lg text-white font-medium transition-colors duration-300"
             >
               Get in Touch
             </a>
             <a
               href="https://drive.google.com/file/d/1JkcGaK07MCuzfodeYMkGGvIimHJcQgrc/view?usp=sharing"
               target="_blank"
-              className="px-6 py-3 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition-colors duration-300"
+              className="px-6 py-3 rounded-full bg-gray-200 text-lg dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition-colors duration-300"
             >
               Download Resume
             </a>
@@ -155,9 +155,9 @@ const Hero: React.FC = () => {
             transition={{ repeat: Infinity, duration: 1.5 }}
           >
             <a href='#skills'>
-            <span className="text-sm mb-2">Explore My Work</span>
+            <span className="text-lg mb-2">Explore My Work</span>
             </a>
-            <ArrowDown size={24}/>
+            <ArrowDown size={30}/>
             
           </motion.div>
         </div>

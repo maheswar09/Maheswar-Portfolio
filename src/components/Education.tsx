@@ -36,7 +36,7 @@ const Education: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Education</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
             Academic journey and accomplishments across institutions.
           </p>
         </div>
@@ -58,10 +58,10 @@ const Education: React.FC = () => {
               />
 
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-1">{edu.university}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mb-1">{edu.degree}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{edu.duration}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mt-1">Grade: {edu.grade}</p>
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-1">{edu.university}</h3>
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-1">{edu.degree}</p>
+                <p className="text-lg text-gray-500 dark:text-gray-400">{edu.duration}</p>
+                <p className="text-lg text-gray-500 dark:text-gray-400 font-medium mt-1">Grade: {edu.grade}</p>
               </div>
             </motion.div>
           ))}

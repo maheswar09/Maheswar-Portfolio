@@ -23,7 +23,7 @@ const Publications: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Publications</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
             Peer-reviewed research contributions in the field of AI and medical imaging.
           </p>
         </div>
@@ -43,14 +43,14 @@ const Publications: React.FC = () => {
               </div>
 
               <div className="flex-1">
-                <h3 className="text-md font-medium text-gray-800 dark:text-gray-100 mb-2">
+                <h3 className="text-xl font-medium text-gray-800 dark:text-gray-100 mb-2">
                   {pub.title}
                 </h3>
                 <a
                   href={pub.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline text-sm"
+                  className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline text-lg"
                 >
                   View Publication <ExternalLink className="w-4 h-4 ml-1" />
                 </a>

@@ -16,7 +16,7 @@ const Skills: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Skills & Expertise</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
             A professional overview of my technical proficiencies and domain knowledge.
           </p>
         </div>
@@ -49,13 +49,13 @@ const Skills: React.FC = () => {
               viewport={{ once: true }}
               className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
-              <h3 className="text-lg font-semibold mb-4">{skill.name}</h3>
+              <h3 className="text-xl font-semibold mb-4">{skill.name}</h3>
               
               <div className="flex flex-wrap gap-2 mt-2">
                 {skill.keywords.map((keyword) => (
                   <span 
                     key={keyword} 
-                    className="px-3 py-1 bg-gray-200 dark:bg-gray-600 rounded-full text-xs"
+                    className="px-3 py-1 bg-gray-200 dark:bg-gray-600 rounded-full text-lg"
                   >
                     {keyword}
                   </span>

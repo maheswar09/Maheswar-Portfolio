@@ -62,7 +62,7 @@ const handleSubmit = (e: React.FormEvent) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
             Looking forward to connecting about research and job opportunities in data science.
           </p>
         </div>
@@ -82,8 +82,8 @@ const handleSubmit = (e: React.FormEvent) => {
                   <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400">Email</h4>
-                  <a href="mailto:gorantlamaheswar@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <h4 className="text-lg font-semibold text-gray-500 dark:text-gray-400">Email</h4>
+                  <a href="mailto:gorantlamaheswar@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg">
                     gorantlamaheswar@gmail.com
                   </a>
                 </div>
@@ -94,8 +94,8 @@ const handleSubmit = (e: React.FormEvent) => {
                   <Phone className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400">Phone</h4>
-                  <a href="tel:+19303332778" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  <h4 className="text-lg font-semibold text-gray-500 dark:text-gray-400">Phone</h4>
+                  <a href="tel:+19303332778" className="text-lg hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                     +1 (930) 333-2778
                   </a>
                 </div>
@@ -106,8 +106,8 @@ const handleSubmit = (e: React.FormEvent) => {
                   <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div className="ml-4">
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400">Location</h4>
-                  <p>Bloomington, Indiana, USA</p>
+                  <h4 className="text-lg font-semibold text-gray-500 dark:text-gray-400">Location</h4>
+                  <p className='text-lg'>Bloomington, Indiana, USA</p>
                 </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
               >
-                <Linkedin className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                <Linkedin className="w-7 h-7 text-gray-700 dark:text-gray-300" />
               </a>
               <a 
                 href="https://github.com/maheswar09" 
@@ -129,7 +129,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
               >
-                <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                <Github className="w-7 h-7 text-gray-700 dark:text-gray-300" />
               </a>
 
               </div>
@@ -139,23 +139,23 @@ const handleSubmit = (e: React.FormEvent) => {
               <h3 className="text-xl font-bold mb-6">Job Preferences</h3>
               <div className="flex flex-col space-y-2">
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Education</span>
-                  <span className="font-medium">MS in Computer Science (2025)</span>
+                  <span className="text-gray-600 dark:text-gray-400 text-lg">Education</span>
+                  <span className="font-medium text-lg">MS in Computer Science (2025)</span>
                 </div>
                 
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400 whitespace-nowrap">
+                  <span className="text-gray-600 dark:text-gray-400 whitespace-nowrap text-lg">
                     Preferred Roles
                   </span>
-                  <span className="font-medium text-right max-w-[70%]">
+                  <span className="font-medium text-right max-w-[70%] text-lg">
                     Software Developer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer
                   </span>
                 </div>
 
                 
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Available From</span>
-                  <span className="font-medium">June 2025</span>
+                  <span className="text-gray-600 dark:text-gray-400 text-lg">Available From</span>
+                  <span className="font-medium text-lg">June 2025</span>
                 </div>
               </div>
             </div>
@@ -171,10 +171,10 @@ const handleSubmit = (e: React.FormEvent) => {
             
             {submitted ? (
               <div className="p-6 bg-green-100 dark:bg-green-900 rounded-lg">
-                <h4 className="text-lg font-semibold text-green-800 dark:text-green-200 mb-2">
+                <h4 className="text-xl font-semibold text-green-800 dark:text-green-200 mb-2">
                   Message Sent Successfully!
                 </h4>
-                <p className="text-green-700 dark:text-green-300">
+                <p className="text-green-700 dark:text-green-300 text-lg">
                   Thank you for reaching out. I'll get back to you as soon as possible.
                 </p>
               </div>
@@ -182,7 +182,7 @@ const handleSubmit = (e: React.FormEvent) => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    <label htmlFor="name" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
                       Your Name
                     </label>
                     <input
@@ -197,7 +197,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    <label htmlFor="email" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
                       Email Address
                     </label>
                     <input
@@ -213,7 +213,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 </div>
                 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  <label htmlFor="subject" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
                     Subject
                   </label>
                   <select
@@ -224,16 +224,16 @@ const handleSubmit = (e: React.FormEvent) => {
                     required
                     className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                   >
-                    <option value="">Select a subject</option>
-                    <option value="Job Opportunity">Job Opportunity</option>
-                    <option value="Research Collaboration">Research Collaboration</option>
-                    <option value="Interview Request">Interview Request</option>
-                    <option value="Other">Other</option>
+                    <option value="" className='text-lg'>Select a subject</option>
+                    <option value="Job Opportunity" className='text-lg'>Job Opportunity</option>
+                    <option value="Research Collaboration" className='text-lg'>Research Collaboration</option>
+                    <option value="Interview Request" className='text-lg'>Interview Request</option>
+                    <option value="Other" className='text-lg'>Other</option>
                   </select>
                 </div>
                 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  <label htmlFor="message" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
                     Message
                   </label>
                   <textarea
@@ -250,7 +250,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors ${
+                  className={`w-full px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-lg font-medium transition-colors ${
                     isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
                   }`}
                 >

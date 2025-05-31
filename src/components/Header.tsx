@@ -42,9 +42,9 @@ const navLinks = [
             <img
               src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="SVC Logo"
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
-            <span className="text-2xl font-bold tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+            <span className="text-3xl font-bold tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
               MG
             </span>
           </a>
@@ -52,12 +52,12 @@ const navLinks = [
 
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="relative text-sm font-medium text-gray-800 dark:text-gray-100 transition duration-300 group"
+                className="relative text-lg font-medium text-gray-800 dark:text-gray-100 transition duration-300 group"
 
               >
                 {link.name}
@@ -68,12 +68,12 @@ const navLinks = [
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Toggle theme"
             >
-              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+              {theme === 'dark' ? <Sun size={30} /> : <Moon size={30} />}
             </button>
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               onClick={toggleTheme}
               className="p-2 mr-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"

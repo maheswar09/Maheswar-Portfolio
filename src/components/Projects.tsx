@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
             Explore my portfolio of data-driven projects with measurable impact and results.
           </p>
         </div>
@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+                className={`px-4 py-2 rounded-full text-lg font-medium whitespace-nowrap transition-colors ${
                   activeFilter === category
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
               <div className="p-6">
                 <div className="flex flex-row justify-between items-center mb-4">
                   <h3 className="text-xl font-bold">{project.title}</h3>
-                  <div className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full">
+                  <div className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-md font-medium rounded-full">
                   {/* <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full"> */}
                     <p className='text-center'>{project.category}</p>
                   {/* </span> */}
@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
                       <div>
                       <CheckCircle className="w-4 h-4 text-green-500 mt-1" />
                       </div>
-                      <span className="line-clamp-7">{point}</span>
+                      <span className="line-clamp-7 text-lg">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -99,7 +99,7 @@ const Projects: React.FC = () => {
                     {project.technologies.map((tech, i) => (
                       <span 
                         key={i} 
-                        className="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs rounded"
+                        className="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-lg rounded"
                       >
                         {tech}
                       </span>
@@ -115,7 +115,7 @@ const Projects: React.FC = () => {
                         rel="noopener noreferrer"
                         className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
                       >
-                        <Github size={18} />
+                        <Github size={30} />
                       </a>
                     )}
                   </div>

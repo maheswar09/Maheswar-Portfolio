@@ -15,14 +15,15 @@ const Timeline: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4">Professional Journey</h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
             A chronological timeline of my career progression and key achievements.
           </p>
         </div>
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 dark:bg-gray-700" />
+          <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 dark:bg-gray-700" />
+
 
           {timelineData.map((item, index) => (
             <motion.div
@@ -31,15 +32,17 @@ const Timeline: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true, margin: '-100px' }}
-              className={`relative mb-16 md:mb-12 w-full 
-                ${index % 2 === 0 ? 'md:pr-12 md:max-w-[calc(50%-32px)]' : 'md:pl-12 md:ml-auto md:max-w-[calc(50%-32px)]'}`}
+              className={`relative mb-16 lg:mb-12 w-full 
+              ${index % 2 === 0 ? 'lg:pr-12 lg:max-w-[calc(50%-32px)]' : 'lg:pl-12 lg:ml-auto lg:max-w-[calc(50%-32px)]'}`}
+
             >
               {/* Timeline Dot */}
               <div
-                className={`hidden md:flex absolute top-0 items-center justify-center w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 border-4 border-white dark:border-gray-800 z-10 
-                  ${index % 2 === 0 ? 'left-full md:-ml-6' : 'left-0 md:-ml-6'}`}
+                className={`hidden lg:flex absolute top-0 items-center justify-center w-20 h-20 rounded-full bg-blue-100 dark:bg-blue-900 border-4 border-white dark:border-gray-800 z-10 
+                ${index % 2 === 0 ? 'left-full lg:-ml-2' : 'left-0 lg:-ml-16'}`}
+
               >
-                <span className="text-xs font-bold text-blue-800 dark:text-blue-200">{item.year}</span>
+                <span className="text-lg font-bold text-blue-800 dark:text-blue-200">{item.year}</span>
               </div>
 
               {/* Card */}
@@ -48,13 +51,15 @@ const Timeline: React.FC = () => {
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
                   <h3 className="text-xl font-bold mb-1 sm:mb-0">{item.title}</h3>
                   <span
-                    className={`self-start inline-block px-3 py-1 text-xs font-medium rounded-full ${
+                    className={`self-start inline-block px-3 py-1 text-lg font-medium rounded-full ${
                       item.current
                         ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
                         : 'bg-gray-200 dark:bg-gray-600 text-gray-800 dark:text-gray-200'
                     }`}
                   >
+                    <p className='text-center'>
                     {item.current ? 'Current' : item.duration}
+                    </p>
                   </span>
                 </div>
 
@@ -98,7 +103,7 @@ const Timeline: React.FC = () => {
                 <div className="mt-4 flex justify-end">
                   <button
                     onClick={() => toggleExpand(item.id)}
-                    className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    className="text-lg font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                   >
                     {expandedId === item.id ? 'Show less' : 'Show more'}
                   </button>
