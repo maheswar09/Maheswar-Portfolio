@@ -148,7 +148,7 @@ const handleSubmit = (e: React.FormEvent) => {
                     Preferred Roles
                   </span>
                   <span className="font-medium text-right max-w-[70%] text-lg">
-                    Software Developer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer
+                    Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer
                   </span>
                 </div>
 
