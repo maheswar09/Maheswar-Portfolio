@@ -7,6 +7,7 @@ const Contact: React.FC = () => {
     name: '',
     email: '',
     subject: '',
+    customSubject:'',
     message: ''
   });
   
@@ -26,6 +27,13 @@ const Contact: React.FC = () => {
 const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);
+  let subjectValue;
+  if(formData.subject==="Other"){
+      subjectValue=formData.customSubject;
+      }
+    else{
+      subjectValue=formData.subject;
+    }
 
   emailjs.send(
     import.meta.env.VITE_SERVICE_ID,
@@ -35,7 +43,7 @@ const handleSubmit = (e: React.FormEvent) => {
     {
       from_name: formData.name,
       from_email: formData.email,
-      subject: formData.subject,
+      subject: subjectValue,
       message: formData.message,
     },
     import.meta.env.VITE_PUBLIC_KEY   
@@ -43,7 +51,7 @@ const handleSubmit = (e: React.FormEvent) => {
   )
   .then(() => {
     setSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setFormData({ name: '', email: '', subject: '',customSubject:'', message: '' });
   })
   .catch((err) => {
     alert("Email failed to send. Please try again.");
@@ -183,7 +191,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      Your Name
+                      Your Name <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="text"
@@ -198,7 +206,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   
                   <div>
                     <label htmlFor="email" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
-                      Email Address
+                      Email Address <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="email"
@@ -214,7 +222,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 
                 <div>
                   <label htmlFor="subject" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Subject
+                    Subject <span className="text-red-600">*</span>
                   </label>
                   <select
                     id="subject"
@@ -231,10 +239,26 @@ const handleSubmit = (e: React.FormEvent) => {
                     <option value="Other" className='text-lg'>Other</option>
                   </select>
                 </div>
+                {formData.subject==="Other" && 
+                  <div>
+                    <label htmlFor="customSubject" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
+                      Enter Subject <span className="text-red-600">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="customSubject"
+                      name="customSubject"
+                      value={formData.customSubject}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                    />
+                  </div>
+                }
                 
                 <div>
                   <label htmlFor="message" className="block text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Message
+                    Message <span className="text-red-600">*</span>
                   </label>
                   <textarea
                     id="message"
