@@ -122,10 +122,11 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Graduate student in Computer Science at Indiana University with industry experience 
-            in full-stack development, CMS platforms, and scalable systems. Skilled in building 
-            secure, accessible applications using React, Angular, Node.js, and AWS, with a focus 
-            on user-centric design and efficient development through CI/CD and agile methodologies.
+            Software Engineer with hands-on experience in full-stack development, cloud platforms, and
+            DevOps tools. Proficient in building scalable, accessible AI-powered web and mobile applications
+            with microservice architecture. Skilled in CI/CD pipelines, Containerization, RESTful APIs, 
+            and database design. Collaborative in agile teams, mentoring peers, and committed to 
+            continuous learning.
           </motion.p>
 
           <motion.div

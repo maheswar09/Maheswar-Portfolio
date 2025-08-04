@@ -74,12 +74,14 @@ const Timeline: React.FC = () => {
                     <h4 className="text-xl font-semibold mb-2">Key Achievements:</h4>
                     <ul className="space-y-2">
                       {item.description.map((achievement, i) => (
-                        <li key={i} className="flex items-start gap-2">
+                        achievement ? (
+                        <li key={i} className="flex items-start gap-2">                          
                           <div>
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1" />
                           </div>
                           <span className="text-lg text-gray-600 dark:text-gray-300">{achievement}</span>
-                        </li>
+                        </li>):<><br/><br/></>
+                        
                       ))}
                     </ul>
 

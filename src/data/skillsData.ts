@@ -35,7 +35,7 @@ export const skillsData = [
       "PHP",
       "jQuery",
       "RESTful API",
-      "npm"
+      "FastAPI"
     ]
   },
   {
@@ -53,7 +53,8 @@ export const skillsData = [
     keywords: [
       "MySQL",
       "MongoDB",
-      "PostgreSQL"
+      "PostgreSQL",
+      "Redis"
     ]
   },
   {
