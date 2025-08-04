@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
               Get in Touch
             </a>
             <a
-              href="https://drive.google.com/file/d/1JkcGaK07MCuzfodeYMkGGvIimHJcQgrc/view?usp=sharing"
+              href="https://drive.google.com/file/d/162VE2kaZBnT901HVX-AW6b6bmI9UWXn-/view?usp=drive_link"
               target="_blank"
               className="px-6 py-3 rounded-full bg-gray-200 text-lg dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition-colors duration-300"
             >
