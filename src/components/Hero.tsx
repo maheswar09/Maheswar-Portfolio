@@ -112,7 +112,7 @@ const Hero: React.FC = () => {
           >
             <span className="block">Maheswar Gorantla</span>
             <span className="inline text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
-              Software Engineer | Full-Stack Developer
+              Front-end Developer | Full-Stack Developer
             </span>
           </motion.h1>
 
@@ -122,11 +122,10 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Software Engineer with hands-on experience in full-stack development, cloud platforms, and
-            DevOps tools. Proficient in building scalable, accessible AI-powered web and mobile applications
-            with microservice architecture. Skilled in CI/CD pipelines, Containerization, RESTful APIs, 
-            and database design. Collaborative in agile teams, mentoring peers, and committed to 
-            continuous learning.
+            Front-End Web Developer skilled in HTML5, CSS3, JavaScript, React, Angular, and CMS platforms. Proven 
+            expertise in building accessible WCAG 2.1 AA-compliant websites for higher ed and nonprofits. Strong collaborator 
+            with designers, writers, and project managers to deliver responsive, data-driven UX. Experienced in design systems, 
+            Agile workflows, and stakeholder communication with measurable results.
           </motion.p>
 
           <motion.div
@@ -142,7 +141,7 @@ const Hero: React.FC = () => {
               Get in Touch
             </a>
             <a
-              href="https://drive.google.com/file/d/172U5BlFooXEx7k_82HBXq4EAUymHkumo/view?usp=sharing"
+              href="https://drive.google.com/file/d/19oz1G6f-ShIFik6S9sxAlUdZwlbAeWNQ/view?usp=sharing"
               target="_blank"
               className="px-6 py-3 rounded-full bg-gray-200 text-lg dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition-colors duration-300"
             >

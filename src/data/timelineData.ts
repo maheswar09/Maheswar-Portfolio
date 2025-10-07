@@ -21,9 +21,9 @@ export const timelineData: TimelineItem[] = [
     duration: 'Jul 2025 – Present',
     current: true,
     description: [
-      'Maintained and enhanced a microservices-based school management system supporting 3k+ parents and staff, handling enrollment, billing, and analytics modules.',
-      'Developed Angular components with RxJS observables, service-based state management, and lazy loading, improving dashboard load times by 35%, while building unit and integration test suites (JUnit, Postman) under TDD practices to reduce regression issues and ensure release stability.',
-      'Automated CI/CD pipelines with GitHub Actions, Docker, AWS ECR and AWS ECS (blue-green deployments) integrated with CloudWatch monitoring, reducing deployment time by 25%.'
+      'Developed and Optimized Angular components using RxJS observables, service-based state management, and lazy loading, improving dashboard load times by 35%.',
+      'Built interactive dashboards and analytics modules with responsive UI and reusable component libraries, improving usability and reducing feature delivery time by 20%.',
+      'Implemented unit and integration tests with JUnit and Postman to ensure UI stability, reducing regression issues by 25% across releases.'
     ],
     technologies: ['Angular', 'Node.js', 'Express.js', 'PostgreSQL', 'TypeScript', 'RxJS', 'JUnit', 'Postman', 'GitHub Actions', 'Docker', 'AWS (ECR, ECS, CloudWatch)']
   },
@@ -66,10 +66,10 @@ export const timelineData: TimelineItem[] = [
     duration: 'Jan 2023 – May 2024',
     current: false,
     description: [
-      'Built and maintained RESTful microservices with Node.js, Express, and PostgreSQL for an e-learning platform serving 5k+ active users, while following Agile methodologies to ensure on-time delivery.',
-      'Optimized PostgreSQL schema with indexing, connection pooling, and Redis caching, thereby reducing query latency by 40% and, through JMeter load testing, validated support for 2k+ concurrent users.',
-      'Developed secure API endpoints with JWT authentication and middleware-driven RBAC, following OWASP standards to prevent XSS, CSRF, and injection attacks.',
-      'Implemented a PayPal-based payment microservice with webhook reconciliation, idempotent transactions, and PCI-aware security practices supporting 1,000+ successful monthly transactions'
+      'Built responsive React components with Hooks, Context API, and Tailwind CSS for course dashboards and payment workflows, serving 5k+ active users.',
+      'Enhanced performance and UX by optimizing client-side rendering, caching strategies, and data fetching, improving page load times by 40%.',
+      'Integrated PayPal payment workflows into the UI, providing real-time transaction updates and error handling, resulting in 1,000+ successful monthly transactions without user disruptions.',
+      'Collaborated in Agile teams with designers and product stakeholders, translating requirements into intuitive UIs while ensuring accessibility and consistent design patterns.'
     ],
     technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'PayPal Gateway', 'Redis', 'Docker', 'JMeter', 'GitHub Actions']
   },
