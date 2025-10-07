@@ -4,13 +4,11 @@ import { motion } from '../utils/motion';
 import { projectsData } from '../data/projectsData';
 
 const Projects: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState('Web Development');
 
-  const filteredProjects = activeFilter === 'all' 
-    ? projectsData 
-    : projectsData.filter(project => project.category === activeFilter);
+  const filteredProjects = projectsData.filter(project => project.category === activeFilter);
 
-  const categories = ['all', ...new Set(projectsData.map(project => project.category))];
+  const categories = [ ...new Set(projectsData.map(project => project.category))];
 
   return (
     <section id="projects" className="md:py-20 bg-gray-50 dark:bg-gray-900">

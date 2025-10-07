@@ -7,49 +7,32 @@ export interface Skill {
 
 export const skillsData = [
   {
-    name: "Programming",
+    name: "Programming Languages",
     // category: "Programming",
     keywords: [
       "C",
       "C++",
       "Python",
       "Java",
-      "C#",
-      "Data Structures",
+      "JavaScript",
+      "TypeScript",
+      "jQuery",
+      "HTML",
+      "CSS",
+      "PHP"
 
     ]
   },
   {
-    name: "Web Development",
+    name: "Frameworks & Libraries",
     // category: "AI/ML",
     keywords: [
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "JavaScript",
-      "TypeScript",
-      "Node.js",
-      "Expres.js",
-      "React.js",
-      "Angular",
-      "PHP",
-      "jQuery",
-      "RESTful API",
-      "FastAPI"
-    ]
-  },
-  {
-    name: "App Development",
-    // category: "Analytics",
-    keywords: [
-      "Android Studio",
-      "React Native",
-      "Flutter"
+      "Angular", "React", "Node.js", "Next.js", "Bootstrap", "React Native", "Express.js", "FastAPI", "JUnit"
     ]
   },
   {
     name: "Databases",
-    // category: "AI/ML",
+    // category: "Analytics",
     keywords: [
       "MySQL",
       "MongoDB",
@@ -58,58 +41,41 @@ export const skillsData = [
     ]
   },
   {
-    name: "Machine Learning & AI Frameworks",
+    name: "Cloud",
     // category: "AI/ML",
     keywords: [
-      "Scikit-learn",
-      "TensorFlow",
-      "PyTorch",
-      "Keras",
-      "CNN",
-      "Pandas"
+      "Google Firebase",
+      "AWS (EC2, Lambda, ECS, S3, ECR, CloudWatch)"
     ]
   },
   {
-    name: "Cloud",
+    name: "Developer Tools & DevOps",
+    // category: "AI/ML",
+    keywords: [
+      "Docker",
+      "Kubernetes",
+      "Jenkins",
+      "GitHub Actions",
+      "Git",
+      "Unity",
+      "Tableau",
+      "Selenium"
+    ]
+  },
+  {
+    name: "Core Competencies",
     // category: "Analytics",
     keywords: [
-      "Google Firebase",
-      "AWS Cloud practitioner",
-      "AWS Associate Developer"
+      "Web Development",
+      "RESTful APIs",
+      "Object-Oriented Programming",
+      "Data Structures and Algorithms",
+      "Database Management",
+      "System Design",
+      "Software Development Life Cycle",
+      "Debugging"
     ]
-  },
-  {
-    name: "Java Frameworks",
-    // category: "Data",
-    keywords: [
-      "Spring Boot",
-      "Maven",
-      "Hibernate"
-    ]
-  },
-  {
-    name: "Automation Testing",
-    // category: "Tools",
-    keywords: [
-      "Selenium",
-    ]
-  },
-  {
-    name: "Other Tools",
-    // category: "Cloud",
-    keywords: [
-      "Git",
-      "Docker",
-      "Unity",
-      "Eclipse IDE",
-      "Tableau",
-      "Microsoft Excel",
-      "WordPress",
-      "Visual Studio Code"
-    ]
-  },
-
-
+  }
 ];
 
 export default skillsData;
