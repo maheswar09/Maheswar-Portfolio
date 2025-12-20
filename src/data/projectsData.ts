@@ -17,6 +17,19 @@ export interface Project {
 
 export const projectsData = [
   {
+    id: 0,
+    title: "Multi-Agent Unit Test Generation System",
+    category: "Agentic AI",
+    description: [
+      "Built a LangGraph-based multi-agent system that autonomously analyzes source code, generates unit tests, injects mocks, executes test suites, remediates failures, and commits validated tests back to the repository.",
+      "Designed stateful execution graphs with retries and conditional branching to enable self-healing workflows that detect failures, apply targeted fixes, and re-run tests until quality gates are met.",
+      "Streamlined CI/CD pipelines by auto-committing generated test suites to GitHub, enabling zero-touch test maintenance and accelerating release cycles."
+    ],
+    technologies: ["LangGraph", "Python", "LLMs", "CI/CD", "GitHub Actions"],
+    githubUrl: "https://github.com/maheswar09/AI_Unit_Test",
+    image: "images/projects/Agents.png",
+  },
+  {
     id: 1,
     title: "Rental Voyage",
     category: "Web Development",

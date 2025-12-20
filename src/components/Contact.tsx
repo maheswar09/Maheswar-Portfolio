@@ -18,12 +18,7 @@ const Contact: React.FC = () => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
-  
- 
 
-
-
-// Inside your handleSubmit:
 const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);

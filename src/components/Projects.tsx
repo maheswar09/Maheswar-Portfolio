@@ -4,7 +4,7 @@ import { motion } from '../utils/motion';
 import { projectsData } from '../data/projectsData';
 
 const Projects: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState('Web Development');
+  const [activeFilter, setActiveFilter] = useState('Agentic AI');
 
   const filteredProjects = projectsData.filter(project => project.category === activeFilter);
 
