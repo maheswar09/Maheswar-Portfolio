@@ -4,7 +4,7 @@ import { motion } from '../utils/motion';
 import { projectsData } from '../data/projectsData';
 
 const Projects: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState('Web Development');
+  const [activeFilter, setActiveFilter] = useState('Agentic AI');
 
   const filteredProjects = projectsData.filter(project => project.category === activeFilter);
 
@@ -58,9 +58,7 @@ const Projects: React.FC = () => {
                 <div className="flex flex-row justify-between items-center mb-4">
                   <h3 className="text-xl font-bold">{project.title}</h3>
                   <div className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-md font-medium rounded-full">
-                  {/* <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs font-medium rounded-full"> */}
                     <p className='text-center'>{project.category}</p>
-                  {/* </span> */}
                   </div>
                 </div>
 
@@ -75,23 +73,6 @@ const Projects: React.FC = () => {
                   ))}
                 </ul>
 
-
-                {/* <div className="grid grid-cols-2 gap-4 mb-6">
-                  {project.metrics.map((metric, i) => (
-                    <div 
-                      key={i} 
-                      className="bg-gray-50 dark:bg-gray-700 p-3 rounded text-center"
-                    >
-                      <span className="block text-2xl font-bold text-blue-600 dark:text-blue-400">
-                        {metric.value}
-                      </span>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">
-                        {metric.label}
-                      </span>
-                    </div>
-                  ))}
-                </div> */}
-
                 <div className="flex justify-between items-center">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
@@ -103,7 +84,6 @@ const Projects: React.FC = () => {
                       </span>
                     ))}
                   </div>
-
 
                   <div className="flex space-x-2">
                     {project.githubUrl && (

@@ -4,7 +4,7 @@ import { motion } from '../utils/motion';
 interface EducationItem {
   id: number;
   university: string;
-  logo: string; // URL or local path
+  logo: string; 
   degree: string;
   duration: string;
   grade: string;
