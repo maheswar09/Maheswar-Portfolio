@@ -21,12 +21,12 @@ export const timelineData: TimelineItem[] = [
     duration: 'Jul 2025 – Present',
     current: true,
     description: [
-      "Maintained and enhanced Java Spring Boot microservices for a school management system supporting 3000+ parents and staff, handling enrollment, billing, messaging, and analytics modules.",
-      "Implemented secure API authentication and authorization using Spring Security, JWT, and role-based access control (RBAC), enforcing fine-grained access control and adhering to OWASP security standards. ",
-      "Implemented CI/CD pipelines with GitHub Actions, Docker, AWS ECR and AWS ECS (blue-green deployments) reducing deployment time by 25%. ",
-      "Improved system reliability and observability by implementing centralized logging and exception handling using Spring AOP and using AWS CloudWatch metrics and alerts to proactively detect and resolve production incidents. "
+      "Maintained and enhanced Node.js and Express.js microservices for a school management system supporting 3000+ parents and staff, handling enrollment, billing, messaging, and analytics modules.",
+      "Built secure and scalable REST APIs using JWT-based authentication, role-based access control (RBAC), and middleware-driven authorization, adhering to OWASP security standards.",
+      "Implemented CI/CD pipelines with GitHub Actions, Docker, AWS ECR and AWS ECS (blue-green deployments) reducing deployment time by 25% and improving release reliability.",
+      "Improved system reliability and observability by integrating AWS CloudWatch logging, metrics, and alerts, enabling proactive detection and resolution of production issues."
     ],
-    technologies: ['Angular', 'Java', 'Spring MVC', 'PostgreSQL', 'Spring Security', 'Spring AOP', 'RxJS', 'JUnit', 'Postman', 'GitHub Actions', 'Docker', 'AWS (ECR, ECS, CloudWatch)']
+    technologies: ['Angular', 'Node.js', 'PostgreSQL', 'Express.js', 'RxJS', 'jest', 'Postman', 'GitHub Actions', 'Docker', 'AWS (ECR, ECS, CloudWatch)']
   },
   {
     id: 2,
@@ -67,12 +67,12 @@ export const timelineData: TimelineItem[] = [
     duration: 'Jan 2023 – May 2024',
     current: false,
     description: [
-      'Built and maintained RESTful microservices using Spring Boot, Spring MVC, and Spring Data JPA for an e-learning platform serving 5k+ active users, following Agile methodologies to ensure on-time delivery. ',
-      'Optimized PostgreSQL performance through schema normalization, indexing strategies, and Redis caching, reducing query latency by 40% and improving overall API throughput. ',
-      'Followed TDD practices to write unit and integration tests using JUnit 5, Mockito, and Spring Boot Test, validating service logic, database interactions, and REST API contracts to reduce production defects. ',
-      'Developed a payment microservice integrating PayPal APIs, implementing webhook reconciliation, idempotent transaction handling, and validated scalability via JMeter load testing for 2000+ concurrent users. '
+      'Built and maintained RESTful microservices using Node.js, Express, and PostgreSQL for an e-learning platform serving 5k+ active users, following Agile methodologies to ensure on-time delivery.',
+      'Optimized PostgreSQL performance through schema normalization, indexing strategies, and Redis caching, reducing query latency by 40% and improving overall API throughput.',
+      'Followed TDD practices to write unit and integration tests using Jest validating service logic, database interactions, and REST API contracts to reduce production defects.',
+      'Developed a payment microservice integrating PayPal APIs, implementing webhook reconciliation, idempotent transaction handling, and validated scalability via JMeter load testing for 2000+ concurrent users.'
     ],
-    technologies: ['React', 'Tailwind CSS', 'Java', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'PayPal Gateway', 'Redis', 'Docker', 'JMeter', 'GitHub Actions']
+    technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'PayPal Gateway', 'Redis', 'Docker', 'JMeter', 'GitHub Actions']
   },
   // {
   //   id: 4,
