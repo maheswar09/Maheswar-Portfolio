@@ -21,9 +21,15 @@ export const skillsData = [
     ]
   },
   {
-    name: "Frameworks & Libraries",
+    name: "Frontend",
     keywords: [
-      "Angular", "React", "Node.js", "Next.js", "Bootstrap", "React Native", "Express.js", "FastAPI", "JUnit"
+      "Angular", "React", "Next.js", "Bootstrap", "React Native", "Taiwind CSS", "Rivet Design System"
+    ]
+  },
+  {
+    name: "Backend",
+    keywords: [
+      "Spring Framework", "Spring Boot", "Spring MVC", "Spring Security", "Spring Data JPA", "Hibernate", "JDBC", "Maven", "Node.js", "Express.js", "FastAPI", "GraphQL"
     ]
   },
   {
@@ -36,24 +42,21 @@ export const skillsData = [
     ]
   },
   {
-    name: "Cloud",
+    name: "Cloud & DevOps",
 
-    keywords: [
-      "Google Firebase",
-      "AWS (EC2, Lambda, ECS, S3, ECR, CloudWatch)"
-    ]
-  },
-  {
-    name: "Developer Tools & DevOps",
     keywords: [
       "Docker",
       "Kubernetes",
       "Jenkins",
       "GitHub Actions",
-      "Git",
-      "Unity",
-      "Tableau",
-      "Selenium"
+      "AWS (EC2, Lambda, ECS, S3, ECR, CloudWatch)"
+    ]
+  },
+  {
+    name: "Testing",
+    keywords: [
+
+      "JUnit 5", "Mockito", "Spring Boot Test", "Jest", "Selenium", "Postman", "JMeter", "Vitest", "Supertest"
     ]
   },
   {

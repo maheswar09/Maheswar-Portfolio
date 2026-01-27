@@ -16,16 +16,17 @@ export const timelineData: TimelineItem[] = [
     id: 1,
     year: '2025',
     title: 'Software Engineer',
-    company: 'SrasysInc',
+    company: 'Srasys Inc.,',
     location: 'Ellicot City, MD, USA',
     duration: 'Jul 2025 – Present',
     current: true,
     description: [
-      'Maintained and enhanced a microservices-based school management system supporting 3k+ parents and staff, handling enrollment, billing, and analytics modules.',
-      'Developed Angular components with RxJS observables, service-based state management, and lazy loading, improving dashboard load times by 35%, while building unit and integration test suites (JUnit, Postman) under TDD practices to reduce regression issues and ensure release stability.',
-      'Automated CI/CD pipelines with GitHub Actions, Docker, AWS ECR and AWS ECS (blue-green deployments) integrated with CloudWatch monitoring, reducing deployment time by 25%.'
+      "Maintained and enhanced Java Spring Boot microservices for a school management system supporting 3000+ parents and staff, handling enrollment, billing, messaging, and analytics modules.",
+      "Implemented secure API authentication and authorization using Spring Security, JWT, and role-based access control (RBAC), enforcing fine-grained access control and adhering to OWASP security standards. ",
+      "Implemented CI/CD pipelines with GitHub Actions, Docker, AWS ECR and AWS ECS (blue-green deployments) reducing deployment time by 25%. ",
+      "Improved system reliability and observability by implementing centralized logging and exception handling using Spring AOP and using AWS CloudWatch metrics and alerts to proactively detect and resolve production incidents. "
     ],
-    technologies: ['Angular', 'Node.js', 'Express.js', 'PostgreSQL', 'TypeScript', 'RxJS', 'JUnit', 'Postman', 'GitHub Actions', 'Docker', 'AWS (ECR, ECS, CloudWatch)']
+    technologies: ['Angular', 'Java', 'Spring MVC', 'PostgreSQL', 'Spring Security', 'Spring AOP', 'RxJS', 'JUnit', 'Postman', 'GitHub Actions', 'Docker', 'AWS (ECR, ECS, CloudWatch)']
   },
   {
     id: 2,
@@ -60,18 +61,18 @@ export const timelineData: TimelineItem[] = [
   {
     id: 4,
     year: '2023',
-    title: 'Software Developer Intern',
-    company: 'SrasysInc',
+    title: 'Software Engineer',
+    company: 'Srasys Inc.,',
     location: 'Ellicot City, MD, USA & Bangalore, India',
     duration: 'Jan 2023 – May 2024',
     current: false,
     description: [
-      'Built and maintained RESTful microservices with Node.js, Express, and PostgreSQL for an e-learning platform serving 5k+ active users, while following Agile methodologies to ensure on-time delivery.',
-      'Optimized PostgreSQL schema with indexing, connection pooling, and Redis caching, thereby reducing query latency by 40% and, through JMeter load testing, validated support for 2k+ concurrent users.',
-      'Developed secure API endpoints with JWT authentication and middleware-driven RBAC, following OWASP standards to prevent XSS, CSRF, and injection attacks.',
-      'Implemented a PayPal-based payment microservice with webhook reconciliation, idempotent transactions, and PCI-aware security practices supporting 1,000+ successful monthly transactions'
+      'Built and maintained RESTful microservices using Spring Boot, Spring MVC, and Spring Data JPA for an e-learning platform serving 5k+ active users, following Agile methodologies to ensure on-time delivery. ',
+      'Optimized PostgreSQL performance through schema normalization, indexing strategies, and Redis caching, reducing query latency by 40% and improving overall API throughput. ',
+      'Followed TDD practices to write unit and integration tests using JUnit 5, Mockito, and Spring Boot Test, validating service logic, database interactions, and REST API contracts to reduce production defects. ',
+      'Developed a payment microservice integrating PayPal APIs, implementing webhook reconciliation, idempotent transaction handling, and validated scalability via JMeter load testing for 2000+ concurrent users. '
     ],
-    technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'PayPal Gateway', 'Redis', 'Docker', 'JMeter', 'GitHub Actions']
+    technologies: ['React', 'Tailwind CSS', 'Java', 'Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'PayPal Gateway', 'Redis', 'Docker', 'JMeter', 'GitHub Actions']
   },
   // {
   //   id: 4,
