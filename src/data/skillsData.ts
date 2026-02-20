@@ -7,16 +7,16 @@ export const skillsData = [
   {
     name: "Programming Languages",
     keywords: [
-      "C",
-      "C++",
       "Python",
-      "Java",
       "JavaScript",
       "TypeScript",
-      "jQuery",
+      "Java",
+      "C",
+      "C++",
       "HTML",
       "CSS",
-      "PHP"
+      "PHP",
+      "jQuery"
 
     ]
   },
@@ -29,7 +29,7 @@ export const skillsData = [
   {
     name: "Backend",
     keywords: [
-      "Spring Framework", "Spring Boot", "Spring MVC", "Spring Security", "Spring Data JPA", "Hibernate", "JDBC", "Maven", "Node.js", "Express.js", "FastAPI", "GraphQL"
+      "FastAPI", "Spring Framework", "Spring Boot", "Spring MVC", "Spring Security", "Spring Data JPA", "Hibernate", "JDBC", "Maven", "Node.js", "Express.js", "GraphQL"
     ]
   },
   {
@@ -56,7 +56,7 @@ export const skillsData = [
     name: "Testing",
     keywords: [
 
-      "JUnit 5", "Mockito", "Spring Boot Test", "Jest", "Selenium", "Postman", "JMeter", "Vitest", "Supertest"
+      "Pytest", "JUnit 5", "Mockito", "Spring Boot Test", "Jest", "Selenium", "Postman", "JMeter", "Vitest", "Supertest"
     ]
   },
   {

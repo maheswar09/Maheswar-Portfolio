@@ -21,12 +21,12 @@ export const timelineData: TimelineItem[] = [
     duration: 'Jul 2025 – Present',
     current: true,
     description: [
-      "Maintained and enhanced Node.js and Express.js microservices supporting enrollment, billing, messaging, and analytics modules, serving 3,000+ parents and staff with high availability.",
+      "Maintained and enhanced FastAPI microservices supporting enrollment, billing, messaging, and analytics modules, serving 3,000+ parents and staff with high availability.",
       "Developed reusable UI components and shared state services with Angular component architecture and lazy loading, reducing feature delivery time by 20%.",
       "Optimized front end performance and API consumption through client-side caching, pagination, and debounced  requests, decreasing redundant network calls and improving responsiveness.",
       "Implemented CI/CD pipelines with GitHub Actions, Docker, AWS ECR and AWS ECS (blue-green deployments) reducing deployment time by 25% and improving release reliability."
     ],
-    technologies: ['Angular', 'Node.js', 'PostgreSQL', 'Express.js', 'RxJS', 'jest', 'Postman', 'GitHub Actions', 'Docker', 'AWS (ECR, ECS, CloudWatch)']
+    technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'RxJS', 'jest', "Pytest", 'Postman', 'GitHub Actions', 'Docker', 'AWS (ECR, ECS, CloudWatch)']
   },
   {
     id: 2,
@@ -67,11 +67,11 @@ export const timelineData: TimelineItem[] = [
     duration: 'Jan 2023 – May 2024',
     current: false,
     description: [
-      "Built and maintained a scalable full stack e-learning platform using React on the frontend and Node.js, Express, and PostgreSQL on the backend, supporting 5,000+ active users with reliable end-to-end workflows.",
+      "Built and maintained a scalable full stack e-learning platform using React on the front end and FastAPI, and PostgreSQL on the backend, supporting 5,000+ active users with reliable end-to-end workflows.",
       "Designed reusable and scalable React component architectures using Hooks, Context API, and modern UI patterns with real-time backend integrations, enabling data-driven dashboards and seamless payment workflows.",
       "Optimized PostgreSQL performance through schema normalization, indexing strategies, and Redis caching, reducing query latency by 40% and improving overall API throughput.",
       "Developed a payment microservice integrating PayPal APIs with webhook reconciliation, idempotent transaction handling, and validated scalability via JMeter load testing for 2000+ concurrent users."
     ],
-    technologies: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'PostgreSQL', 'PayPal Gateway', 'Redis', 'Docker', 'JMeter', 'GitHub Actions']
+    technologies: ['React', 'Tailwind CSS', 'FastAPI', 'PostgreSQL', 'Pytest', 'PayPal Gateway', 'Redis', 'Docker', 'JMeter', 'GitHub Actions']
   },
 ];
