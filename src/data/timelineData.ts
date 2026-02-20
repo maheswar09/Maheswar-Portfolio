@@ -46,7 +46,7 @@ export const timelineData: TimelineItem[] = [
   {
     id: 3,
     year: '2024',
-    title: 'CMS Developer Intern',
+    title: 'Software Developer Intern',
     company: 'University Information Technology Services (UITS), Indiana University (IU)',
     location: 'Bloomington, IN, USA',
     duration: 'May 2024 – Jul 2024',
