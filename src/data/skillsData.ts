@@ -7,12 +7,12 @@ export const skillsData = [
   {
     name: "Programming Languages",
     keywords: [
-      "C",
-      "C++",
-      "Python",
       "Java",
+      "Python",
       "JavaScript",
       "TypeScript",
+      "C",
+      "C++",
       "jQuery",
       "HTML",
       "CSS",
