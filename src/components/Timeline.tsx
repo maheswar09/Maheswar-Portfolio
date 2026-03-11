@@ -69,7 +69,7 @@ const Timeline: React.FC = () => {
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-2">{item.location}</p>
                 </div>
                 {/* Expanded details */}
-                {expandedId === item.id && (
+                {/* {expandedId === item.id && (
                   <div className="mt-4">
                     <h4 className="text-xl font-semibold mb-2">Key Achievements:</h4>
                     <ul className="space-y-2">
@@ -99,17 +99,17 @@ const Timeline: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                )}
+                )} */}
 
                 {/* Show More / Less */}
-                <div className="mt-4 flex justify-end">
+                {/* <div className="mt-4 flex justify-end">
                   <button
                     onClick={() => toggleExpand(item.id)}
                     className="text-lg font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
                   >
                     {expandedId === item.id ? 'Show less' : 'Show more'}
                   </button>
-                </div>
+                </div> */}
               </div>
             </motion.div>
           ))}

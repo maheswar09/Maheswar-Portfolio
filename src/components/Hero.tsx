@@ -141,13 +141,13 @@ const Hero: React.FC = () => {
             >
               Get in Touch
             </a>
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1SOh8Z2eZN32caFDWAkqnTBL13UvAsHOj/view?usp=drive_link"
               target="_blank"
               className="px-6 py-3 rounded-full bg-gray-200 text-lg dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition-colors duration-300"
             >
               Download Resume
-            </a>
+            </a> */}
           </motion.div>
 
           <motion.div
