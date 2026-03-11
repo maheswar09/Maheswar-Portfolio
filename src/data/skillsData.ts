@@ -23,7 +23,7 @@ export const skillsData = [
   {
     name: "Frontend",
     keywords: [
-      "Angular", "React", "Next.js", "Bootstrap", "React Native", "Taiwind CSS", "Rivet Design System"
+      "React", "Next.js", "Angular", "Bootstrap", "React Native", "Taiwind CSS", "Rivet Design System"
     ]
   },
   {
