@@ -11,10 +11,10 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">Maheswar Gorantla</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md text-lg">
               MS in Computer Science candidate at Indiana University, specialized in 
-              full-stack development, CMS platforms, and scalable systems. Seeking opportunities starting June 2025.
+              full-stack development, CMS platforms, and scalable systems. Seeking opportunities starting June 2026.
             </p>
             <div className="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 text-lg text-gray-500 dark:text-gray-400">
-              <span>✉️ gorantlamaheswar@gmail.com</span>
+              <span>✉️ maheswar9g@gmail.com</span>
               <span>📱 +1 (930) 333-2778</span>
             </div>
           </div>

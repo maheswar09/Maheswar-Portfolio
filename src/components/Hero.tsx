@@ -122,11 +122,10 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Software Engineer with hands-on experience in full-stack development, cloud platforms, and
-            DevOps tools. Proficient in building scalable, accessible AI-powered web and mobile applications
-            with microservice architecture. Skilled in CI/CD pipelines, Containerization, RESTful APIs, 
-            and database design. Collaborative in agile teams, mentoring peers, and committed to 
-            continuous learning.
+            Results-driven Software AI Engineer with 5+ years of experience designing, developing, and deploying scalable full-stack and 
+            AI-powered applications. Experienced in cloud-native architectures, microservices, Retrieval-Augmented Generation (RAG), 
+            Agentic AI systems, and CI/CD automation. Proven track record of building secure, high-availability platforms, optimizing
+            system performance, and delivering enterprise-grade solutions supporting millions of users across healthcare, education, and enterprise domains. 
           </motion.p>
 
           <motion.div

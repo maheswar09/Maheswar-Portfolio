@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from '../utils/motion';
 import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
- import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -86,8 +86,8 @@ const handleSubmit = (e: React.FormEvent) => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-semibold text-gray-500 dark:text-gray-400">Email</h4>
-                  <a href="mailto:gorantlamaheswar@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg">
-                    gorantlamaheswar@gmail.com
+                  <a href="mailto:maheswar9g@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-lg">
+                    maheswar9g@gmail.com
                   </a>
                 </div>
               </div>
@@ -151,14 +151,14 @@ const handleSubmit = (e: React.FormEvent) => {
                     Preferred Roles
                   </span>
                   <span className="font-medium text-right max-w-[70%] text-lg">
-                    Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer
+                    Software Engineer, AI Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer
                   </span>
                 </div>
 
                 
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
                   <span className="text-gray-600 dark:text-gray-400 text-lg">Available From</span>
-                  <span className="font-medium text-lg">June 2025</span>
+                  <span className="font-medium text-lg">June 2026</span>
                 </div>
               </div>
             </div>

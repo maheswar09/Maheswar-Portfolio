@@ -13,7 +13,7 @@ const publicationsData = [
     id: 2,
     title:
       'Synthesis of Glioblastoma Segmentation Data Using Generative Adversarial Network.',
-    link: 'https://www.researchgate.net/publication/381946660_Synthesis_of_Glioblastoma_Segmentation_Data_Using_Generative_Adversarial_Network',
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-58174-8_26'
   },
 ];
 

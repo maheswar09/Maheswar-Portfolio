@@ -21,59 +21,67 @@ export const skillsData = [
     ]
   },
   {
-    name: "Frontend",
+    name: "AI & Emerging Technologies",
     keywords: [
-      "React", "Next.js", "Angular", "Bootstrap", "React Native", "Taiwind CSS", "Rivet Design System"
+      "Agentic AI",
+      "LangGraph",
+      "CrewAI",
+      "Large Language Models (LLMs)",
+      "GitHub Copilot",
+      "AI Workflow Automation",
+      "Multi-Agent Systems"
+
     ]
   },
   {
-    name: "Backend",
+    name: "Frontend Technologies",
     keywords: [
-      "Node.js", "Express.js", "FastAPI", "Spring Framework", "Spring Boot", "Spring MVC", "Spring Security", "Spring Data JPA", "Hibernate", "JDBC", "Maven", "GraphQL"
+      "React.js", "Angular", "Next.js", "Bootstrap", "WordPress", "Responsive Web Design", "UI/UX Development",
+      "Component-Based Architecture", "Custom Hooks", "React Query", "State Management", "Accessibility Standards (WCAG 2.1 AA)"
     ]
   },
   {
-    name: "Databases",
+    name: "Backend Technologies",
     keywords: [
-      "MySQL",
-      "MongoDB",
-      "PostgreSQL",
-      "Redis"
+      "Node.js", "Express.js", "FastAPI", "GraphQL", "Spring Boot", "RESTful APIs", "JWT Authentication",
+      "Role-Based Access Control (RBAC)", "Middleware Development", "Worker Threads", "Microservices Architecture"
+    ]
+  },
+  {
+    name: "Databases & Data Management",
+    keywords: [
+      "PostgreSQL", "MySQL", "MongoDB", "Redis", "Database Design", "Data Modeling", "Query Optimization",
+      "Indexing", "Normalization", "Caching Strategies"
     ]
   },
   {
     name: "Cloud & DevOps",
 
     keywords: [
-      "Docker",
-      "Kubernetes",
-      "Jenkins",
-      "GitHub Actions",
-      "AWS (EC2, Lambda, ECS, S3, ECR, CloudWatch)"
+      "AWS (ECS, ECR, Lambda, SQS, SNS, CloudWatch)", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions",
+      "CI/CD Pipelines", "Infrastructure Automation", "Containerization", "Deployment Automation"
     ]
   },
   {
-    name: "Testing",
+    name: "Testing & Quality Assurance",
     keywords: [
 
-      "Jest", "Vitest", "Supertest", "JUnit 5", "Mockito", "Spring Boot Test", "Selenium", "Postman", "JMeter",
+      "Jest", "Vitest", "Postman", "JMeter", "Selenium", "Cypress", "Playwright", "SonarQube", "Test-Driven Development (TDD)",
+      "Unit Testing", "Integration Testing", "Performance Testing", "Static Code Analysis",
     ]
   },
   {
-    name: "Core Competencies",
+    name: "Monitoring & Observability",
     keywords: [
-      "Agentic AI",
-      "LangGraph",
-      "Crew AI",
-      "GraphQL",
-      "Web Development",
-      "RESTful APIs",
-      "Object-Oriented Programming",
-      "Data Structures and Algorithms",
-      "Database Management",
-      "System Design",
-      "Software Development Life Cycle",
-      "Debugging"
+      "Prometheus", "Grafana", "CloudWatch", "SNS Alerts", "Application Monitoring", "Performance Tracking",
+      "Incident Detection", "Logging & Alerting"
+    ]
+  },
+  {
+    name: "Soft Skills",
+    keywords: [
+      "Problem-Solving", "System Design", "Cross-functional Collaboration", "Agile Development", "Technical Documentation",
+      "Stakeholder Communication", "Leadership", "Analytical Thinking"
     ]
   }
 ];
