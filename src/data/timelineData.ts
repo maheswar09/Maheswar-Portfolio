@@ -59,7 +59,7 @@ export const timelineData: TimelineItem[] = [
   {
     id: 5,
     year: '2021',
-    title: 'Software Engineer intern',
+    title: 'Software Engineer Intern',
     company: 'LTIMindtree',
     location: 'Bhubaneswar, India',
     duration: 'Jan 2021 – Jul 2021',
