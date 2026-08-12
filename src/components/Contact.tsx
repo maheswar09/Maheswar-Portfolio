@@ -118,14 +118,14 @@ const handleSubmit = (e: React.FormEvent) => {
             <div className="mt-10">
               <h3 className="text-xl font-bold mb-6">Professional Profiles</h3>
               <div className="flex space-x-4">
-              <a 
+              {/* <a 
                 href="https://www.linkedin.com/in/maheswar-gorantla-a80b60209/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors"
               >
                 <Linkedin className="w-7 h-7 text-gray-700 dark:text-gray-300" />
-              </a>
+              </a> */}
               <a 
                 href="https://github.com/maheswar09" 
                 target="_blank"
